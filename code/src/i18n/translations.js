@@ -374,6 +374,36 @@ Niveau : L3*/
         fr: "Un projet de groupe dynamique dans lequel j'ai développé un jeu de plateau et de cartes en Java, intégrant la conception orientée objet et une interface conviviale. Ce projet a réuni créativité et expertise technique pour créer une expérience de jeu captivante.",
         en: "A dynamic group project in which I developed a board and card game in Java, integrating object-oriented design and a user-friendly interface. This project brought together creativity and technical expertise to create a compelling gaming experience."
       }
+    },
+    capybaraBot: {
+      title: {
+        fr: "Capybara Discord Bot - Jeu d'Économie Piloté par IA",
+        en: "Capybara Discord Bot - AI-Driven Economy Game"
+      },
+      description: {
+        fr: "Un bot Discord innovant développé en solo où le gameplay repose entièrement sur l'interaction avec un LLM incarnant un dieu capybara. Les joueurs cultivent des ressources et doivent convaincre l'IA de leur accorder des bénédictions, créant une expérience unique mêlant farm, économie virtuelle et persuasion narrative basée sur l'IA générative.",
+        en: "An innovative Discord bot developed solo where gameplay entirely revolves around interacting with an LLM embodying a capybara god. Players farm resources and must convince the AI to grant them blessings, creating a unique experience blending farming, virtual economy, and narrative persuasion powered by generative AI."
+      }
+    },
+    skullRoulette: {
+      title: {
+        fr: "Skull Roulette - Jeu Multijoueur Godot",
+        en: "Skull Roulette - Godot Multiplayer Game"
+      },
+      description: {
+        fr: "Un jeu multijoueur commercial développé en solo pour Steam, revisitant la roulette russe avec un gameplay unique. Backend Java avec architecture hexagonale ultra-propre et principes SOLID, frontend Godot avec shaders personnalisés, communication temps réel via WebSocket et batterie de tests exhaustive.",
+        en: "A commercial multiplayer game developed solo for Steam, reimagining Russian roulette with unique gameplay. Java backend with ultra-clean hexagonal architecture and SOLID principles, Godot frontend with custom shaders, real-time WebSocket communication, and comprehensive test suite."
+      }
+    },
+    myAvatar: {
+      title: {
+        fr: "MyAvatar - Plateforme de Gestion d'Avatars",
+        en: "MyAvatar - Avatar Management Platform"
+      },
+      description: {
+        fr: "Clone de Gravatar développé en équipe avec Symfony et Twig. Responsable du panneau d'administration permettant la gestion et modération des utilisateurs, avec système de rôles sécurisé, contrôleurs dédiés et interface Twig intuitive pour les administrateurs.",
+        en: "Gravatar clone developed as a team using Symfony and Twig. Responsible for admin panel enabling user management and moderation, featuring secure role system, dedicated controllers, and intuitive Twig interface for administrators."
+      }
     }
   },
 
@@ -489,7 +519,7 @@ Niveau : L3*/
       fr: "← Retour au Portfolio",
       en: "← Back to Portfolio"
     },
-    
+
     veryBadSplit: {
       title: {
         fr: "SAE – Very Bad Split: Application Web de Gestion Financière d'Événements",
@@ -818,6 +848,156 @@ Niveau : L3*/
       takeaways: {
         fr: "Renforcé la maîtrise de Java et acquis une expérience précieuse dans la création d'applications évolutives et pilotées par les tests.",
         en: "Strengthened Java proficiency and gained valuable experience in creating scalable, test-driven applications."
+      }
+    },
+
+    capybaraBot: {
+      title: {
+        fr: "Capybara Discord Bot - Jeu d'Économie Piloté par IA",
+        en: "Capybara Discord Bot - AI-Driven Economy Game"
+      },
+      intro: {
+        fr: "Un bot Discord innovant que j'ai développé en solo, dont le gameplay entier repose sur l'interaction avec un LLM incarnant un dieu capybara. Les joueurs doivent farmer des ressources tout en convainquant l'IA de leur accorder des bénédictions, créant une expérience de jeu unique où la persuasion et la stratégie narrative sont aussi importantes que la gestion économique.",
+        en: "An innovative Discord bot I developed solo, whose entire gameplay revolves around interacting with an LLM embodying a capybara god. Players must farm resources while convincing the AI to grant them blessings, creating a unique gaming experience where persuasion and narrative strategy are as important as economic management."
+      },
+      context: {
+        fr: "Le cœur du jeu repose sur un grand modèle de langage (LLM) qui juge chaque action des joueurs. L'objectif principal est de cultiver des ressources (pastèques, etc.) et de convaincre l'IA divine de vous aider en formulant des requêtes, en répondant à des épreuves et en démontrant votre foi. L'IA génère dynamiquement des scénarios, distribue récompenses ou punitions selon vos arguments, et crée une expérience narrative émergente. Le gameplay s'est affiné au fil des playtests pour équilibrer l'influence de l'IA et la progression des joueurs.",
+        en: "The game's core relies on a large language model (LLM) that judges every player action. The main objective is to farm resources (watermelons, etc.) and convince the divine AI to help you by formulating requests, responding to trials, and demonstrating your faith. The AI dynamically generates scenarios, distributes rewards or punishments based on your arguments, and creates an emergent narrative experience. Gameplay was refined through playtesting to balance AI influence and player progression."
+      },
+      role: {
+        fr: "Architecte et développeur principal du projet en solo. Conçu le système de prompt engineering permettant à l'IA de juger les joueurs de manière cohérente, implémenté les mécaniques de farm et d'économie, et créé une infrastructure Git collaborative pour faciliter les contributions futures. Orchestré les sessions de playtesting pour affiner l'équilibre entre farming et persuasion de l'IA.",
+        en: "Lead architect and solo developer. Designed the prompt engineering system enabling the AI to judge players consistently, implemented farm and economy mechanics, and created collaborative Git infrastructure to facilitate future contributions. Orchestrated playtesting sessions to refine the balance between farming and AI persuasion."
+      },
+      technologies: {
+        fr: "Node.js, Discord.js, MySQL, Docker, API LLM (Deepseek/OpenAI), prompt engineering avancé, Docker Compose et Adminer.",
+        en: "Node.js, Discord.js, MySQL, Docker, LLM APIs (Deepseek/OpenAI), advanced prompt engineering, Docker Compose, and Adminer."
+      },
+      skills: {
+        fr: [
+          "Conçu un système de gameplay entièrement piloté par IA générative avec évaluation dynamique des actions (CE1.06).",
+          "Développé des techniques de prompt engineering pour garantir des réponses cohérentes et équilibrées de l'IA (AC11).",
+          "Implémenté une économie virtuelle avec farming, trading crypto simulé et système de progression (AC1).",
+          "Créé une architecture backend modulaire intégrant base de données relationnelle et API externes (CE1.03).",
+          "Mis en place un environnement Docker containerisé pour faciliter déploiement et scalabilité (CE1.06).",
+          "Établi un workflow Git structuré pour permettre les contributions collaboratives malgré un développement solo initial (C21.04).",
+          "Appliqué une méthodologie itérative basée sur le playtesting pour affiner l'équilibre gameplay/IA (AC11).",
+          "Développé des systèmes de classement multi-critères (foi, écologie, richesse) pour encourager diverses stratégies de jeu (AC2)."
+        ],
+        en: [
+          "Designed gameplay system entirely driven by generative AI with dynamic action evaluation (CE1.06).",
+          "Developed prompt engineering techniques to ensure consistent and balanced AI responses (AC11).",
+          "Implemented virtual economy with farming, simulated crypto trading, and progression system (AC1).",
+          "Created modular backend architecture integrating relational database and external APIs (CE1.03).",
+          "Established containerized Docker environment to facilitate deployment and scalability (CE1.06).",
+          "Set up structured Git workflow to enable collaborative contributions despite initial solo development (C21.04).",
+          "Applied iterative methodology based on playtesting to refine gameplay/AI balance (AC11).",
+          "Developed multi-criteria ranking systems (faith, ecology, wealth) to encourage diverse gameplay strategies (AC2)."
+        ]
+      },
+      takeaways: {
+        fr: "Maîtrisé l'intégration de LLM dans des systèmes de jeu interactifs où l'IA devient un acteur central du gameplay. Développé une expertise en prompt engineering pour créer des expériences narratives émergentes cohérentes, tout en renforçant mes compétences en architecture backend, DevOps et game design itératif.",
+        en: "Mastered LLM integration in interactive game systems where AI becomes a central gameplay actor. Developed expertise in prompt engineering to create coherent emergent narrative experiences, while strengthening backend architecture, DevOps, and iterative game design skills."
+      }
+    },
+
+    skullRoulette: {
+      title: {
+        fr: "Skull Roulette - Jeu Multijoueur Godot",
+        en: "Skull Roulette - Godot Multiplayer Game"
+      },
+      intro: {
+        fr: "Un jeu multijoueur commercial ambitieux développé en solo, revisitant la roulette russe avec un gameplay unique et nerveux. Ce projet combine une architecture backend hexagonale ultra-propre en Java avec un frontend Godot visuellement captivant, démontrant une maîtrise complète de la stack technique moderne pour le développement de jeux en ligne.",
+        en: "An ambitious commercial multiplayer game developed solo, reimagining Russian roulette with unique, nerve-wracking gameplay. This project combines an ultra-clean hexagonal backend architecture in Java with a visually captivating Godot frontend, demonstrating complete mastery of modern technical stack for online game development."
+      },
+      context: {
+        fr: "L'objectif était de créer un jeu commercial destiné à Steam, avec un gameplay multijoueur compétitif centré sur la tension psychologique et la prise de risque. Le projet nécessitait une architecture robuste pour gérer les interactions en temps réel entre joueurs, tout en offrant une expérience visuelle immersive grâce à des shaders personnalisés et une direction artistique soignée.",
+        en: "The goal was to create a commercial game for Steam release, featuring competitive multiplayer gameplay centered on psychological tension and risk-taking. The project required robust architecture to handle real-time player interactions while delivering an immersive visual experience through custom shaders and polished art direction."
+      },
+      role: {
+        fr: "Développeur full-stack et game designer en solo. Architecturé le backend avec une approche hexagonale stricte respectant les principes SOLID, implémenté la communication WebSocket temps réel, développé le client Godot avec shaders personnalisés, et conçu les mécaniques de jeu pour créer une expérience tendue et addictive.",
+        en: "Full-stack developer and game designer working solo. Architected the backend with strict hexagonal approach following SOLID principles, implemented real-time WebSocket communication, developed Godot client with custom shaders, and designed game mechanics to create a tense and addictive experience."
+      },
+      technologies: {
+        fr: "Java avec architecture hexagonale, WebSocket pour communication temps réel, Godot Engine, GLSL pour shaders personnalisés, suite de tests complète (JUnit/Mockito), et principes SOLID pour code maintenable.",
+        en: "Java with hexagonal architecture, WebSocket for real-time communication, Godot Engine, GLSL for custom shaders, comprehensive test suite (JUnit/Mockito), and SOLID principles for maintainable code."
+      },
+      skills: {
+        fr: [
+          "Appliqué l'architecture hexagonale et les principes SOLID pour créer un backend ultra-maintenable et testable (AC11).",
+          "Développé une batterie de tests exhaustive garantissant la fiabilité du système multijoueur critique (C21.04).",
+          "Implémenté une communication bidirectionnelle WebSocket pour synchronisation temps réel des joueurs (CE1.03).",
+          "Créé des shaders GLSL personnalisés pour enrichir l'identité visuelle et l'immersion du jeu (AC2).",
+          "Conçu des mécaniques de gameplay équilibrées créant tension psychologique et rejouabilité (AC11).",
+          "Maîtrisé Godot Engine pour développer une interface utilisateur fluide et responsive (CE1.06).",
+          "Séparé proprement logique métier et infrastructure grâce à l'architecture en couches (AC1).",
+          "Anticipé les besoins de scalabilité pour un lancement commercial sur Steam (CE1.06).",
+          "Optimisé les performances réseau pour garantir une expérience multijoueur sans latence (AC3)."
+        ],
+        en: [
+          "Applied hexagonal architecture and SOLID principles to create ultra-maintainable and testable backend (AC11).",
+          "Developed comprehensive test suite ensuring reliability of critical multiplayer system (C21.04).",
+          "Implemented bidirectional WebSocket communication for real-time player synchronization (CE1.03).",
+          "Created custom GLSL shaders to enhance visual identity and game immersion (AC2).",
+          "Designed balanced gameplay mechanics creating psychological tension and replayability (AC11).",
+          "Mastered Godot Engine to develop smooth and responsive user interface (CE1.06).",
+          "Cleanly separated business logic and infrastructure through layered architecture (AC1).",
+          "Anticipated scalability needs for commercial Steam launch (CE1.06).",
+          "Optimized network performance to ensure lag-free multiplayer experience (AC3)."
+        ]
+      },
+      takeaways: {
+        fr: "Maîtrisé l'intégralité du pipeline de développement d'un jeu commercial multijoueur, de l'architecture backend enterprise-grade à l'expérience utilisateur immersive. Développé une expertise approfondie en clean architecture, communication temps réel et programmation de shaders, tout en consolidant ma vision du game design orienté tension et engagement joueur.",
+        en: "Mastered the complete development pipeline of a commercial multiplayer game, from enterprise-grade backend architecture to immersive user experience. Developed deep expertise in clean architecture, real-time communication, and shader programming, while consolidating my vision of tension-oriented and player-engagement game design."
+      }
+    },
+    myAvatar: {
+      title: {
+        fr: "MyAvatar - Plateforme de Gestion d'Avatars",
+        en: "MyAvatar - Avatar Management Platform"
+      },
+      intro: {
+        fr: "Un projet en équipe visant à développer un clone de Gravatar avec Symfony et Twig. J'ai pris en charge le développement du panneau d'administration, permettant aux administrateurs de gérer l'ensemble des utilisateurs de la plateforme tout en respectant une architecture MVC rigoureuse et les bonnes pratiques de sécurité web.",
+        en: "A team project aimed at developing a Gravatar clone using Symfony and Twig. I handled the development of the admin panel, enabling administrators to manage all platform users while adhering to rigorous MVC architecture and web security best practices."
+      },
+      context: {
+        fr: "L'objectif était de créer un service permettant aux utilisateurs d'associer leur adresse email à une photo de profil accessible via une URL hashée en SHA256, imitant le fonctionnement de Gravatar. Le projet nécessitait une gestion complète des utilisateurs, un système de rôles, des fonctionnalités AJAX pour améliorer l'expérience utilisateur, et un panneau d'administration pour superviser la plateforme.",
+        en: "The goal was to create a service allowing users to associate their email address with a profile picture accessible via a SHA256-hashed URL, mimicking Gravatar's functionality. The project required comprehensive user management, a role system, AJAX features to enhance user experience, and an admin panel to oversee the platform."
+      },
+      role: {
+        fr: "Responsable du développement du panneau d'administration. Implémenté l'interface de gestion des utilisateurs permettant aux administrateurs de visualiser tous les comptes, supprimer des utilisateurs non-administrateurs, et gérer la modération de la plateforme. Assuré la sécurité des accès via le système de rôles Symfony et développé les contrôleurs, vues Twig et logique métier associés.",
+        en: "Responsible for admin panel development. Implemented user management interface allowing administrators to view all accounts, delete non-admin users, and handle platform moderation. Ensured access security through Symfony's role system and developed associated controllers, Twig views, and business logic."
+      },
+      technologies: {
+        fr: "Symfony 6, Twig pour le templating, Doctrine ORM, JavaScript vanilla pour interactions AJAX, système de rôles Symfony Security, MySQL/PostgreSQL, et Git pour versioning collaboratif.",
+        en: "Symfony 6, Twig for templating, Doctrine ORM, vanilla JavaScript for AJAX interactions, Symfony Security role system, MySQL/PostgreSQL, and Git for collaborative versioning."
+      },
+      skills: {
+        fr: [
+          "Implémenté un système de gestion des rôles et permissions avec Symfony Security (AC3).",
+          "Développé des interfaces d'administration permettant la modération et gestion des utilisateurs (AC11).",
+          "Appliqué les principes MVC et l'architecture Symfony pour maintenir une séparation claire des responsabilités (CE1.03).",
+          "Sécurisé l'accès aux fonctionnalités sensibles via annotations et contrôle d'accès basé sur les rôles (AC3).",
+          "Utilisé Doctrine ORM pour gérer les requêtes complexes et relations entre entités (AC1).",
+          "Créé des vues Twig réutilisables et maintenables pour l'interface d'administration (AC2).",
+          "Collaboré efficacement via Git avec workflow de branches pour éviter les conflits (C21.04).",
+          "Respecté les standards de sécurité web (protection CSRF, validation des données, gestion des sessions) (AC3).",
+          "Testé et validé les fonctionnalités de suppression d'utilisateurs et leurs effets en cascade sur la base de données (C21.04)."
+        ],
+        en: [
+          "Implemented role and permission management system with Symfony Security (AC3).",
+          "Developed administrative interfaces enabling moderation and user management (AC11).",
+          "Applied MVC principles and Symfony architecture to maintain clear separation of concerns (CE1.03).",
+          "Secured access to sensitive features via annotations and role-based access control (AC3).",
+          "Used Doctrine ORM to handle complex queries and entity relationships (AC1).",
+          "Created reusable and maintainable Twig views for admin interface (AC2).",
+          "Collaborated effectively via Git with branch workflow to avoid conflicts (C21.04).",
+          "Adhered to web security standards (CSRF protection, data validation, session management) (AC3).",
+          "Tested and validated user deletion features and their cascading effects on database (C21.04)."
+        ]
+      },
+      takeaways: {
+        fr: "Approfondi ma compréhension du framework Symfony et de son écosystème, notamment la gestion des rôles et permissions. Développé une expertise en architecture MVC et en sécurisation d'interfaces d'administration. Renforcé mes compétences en collaboration Git et en développement back-end structuré pour applications web professionnelles.",
+        en: "Deepened understanding of Symfony framework and its ecosystem, particularly role and permission management. Developed expertise in MVC architecture and securing administrative interfaces. Strengthened Git collaboration skills and structured backend development for professional web applications."
       }
     }
   }

@@ -73,19 +73,8 @@ const PagProjectDetail = () => {
     return <Navigate to="/" replace />;
   }
   
-  // Convert project id to the correct translation key
-  const projectKeyMap = {
-    'very-bad-split': 'veryBadSplit',
-    'skull': 'skull',
-    'smile-web': 'smileWeb',
-    'silent-or-boom': 'silentOrBoom',
-    'sae-3a': 'sae3a',
-    'terraria-like': 'terrariaLike',
-    'sae-train': 'saeTrain'
-  };
-  
-  const projectKey = projectKeyMap[project.id];
-  const detailsKey = `projectDetails.${projectKey}`;
+  // Use detailsKey provided in `projectsData` for translation path
+  const detailsKey = project.detailsKey || `projectDetails.${project.id}`;
   
   // Helper function to check if translation exists
   const hasTranslation = (key) => {

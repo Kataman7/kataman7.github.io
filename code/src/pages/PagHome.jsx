@@ -113,19 +113,6 @@ const PagHome = () => {
         />
       </MolSection>
 
-      {/* Programming Languages Section */}
-      <MolSection>
-        <MolTwoColumn
-          leftWidth="20%"
-          left={<AtmHeading level={3}>{t('languages.title')}</AtmHeading>}
-          right={
-            <MolSkills 
-              skills={programmingSkills}
-            />
-          }
-        />
-      </MolSection>
-
       {/* Experience Section */}
       <MolSection>
         <MolTwoColumn
@@ -147,6 +134,19 @@ const PagHome = () => {
               </AtmHeading>
               <AtmText>{t('experience.c4w.content')}</AtmText>
             </>
+          }
+        />
+      </MolSection>
+
+      {/* Programming Languages Section */}
+      <MolSection>
+        <MolTwoColumn
+          leftWidth="20%"
+          left={<AtmHeading level={3}>{t('languages.title')}</AtmHeading>}
+          right={
+            <MolSkills 
+              skills={programmingSkills}
+            />
           }
         />
       </MolSection>
