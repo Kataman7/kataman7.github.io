@@ -4,7 +4,7 @@ const NavList = styled.ul`
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: ${props => props.theme.spacing.medium};
   font-family: ${props => props.theme.fontFamily};
 `;
 

@@ -6,14 +6,14 @@ import styled from 'styled-components';
 
 const ThemeButton = styled(AtmButton)`
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: ${props => props.theme.spacing.large};
+  right: ${props => props.theme.spacing.large};
   z-index: 1000;
 `;
 
 const LanguageButton = styled(AtmButton)`
   position: fixed;
-  top: 20px;
+  top: ${props => props.theme.spacing.large};
   right: 90px;
   z-index: 1000;
 `;

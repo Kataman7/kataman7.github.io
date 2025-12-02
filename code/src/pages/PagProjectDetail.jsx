@@ -16,17 +16,17 @@ const Main = styled.main`
 
 const DateRange = styled.div`
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: ${props => props.theme.spacing.small};
 `;
 
 const MediaContainer = styled.div`
-  margin-top: 20px;
+  margin-top: ${props => props.theme.spacing.large};
   width: 100%;
   
   img {
-    width: 100%;
-    max-width: 800px;
+  width: 100%;
+  max-width: ${props => props.theme.sizes.mediaMaxWidth};
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -37,28 +37,32 @@ const MediaContainer = styled.div`
   }
   
   video {
-    width: 100%;
-    max-width: 800px;
+  width: 100%;
+  max-width: ${props => props.theme.sizes.mediaMaxWidth};
     height: auto;
-    border: 2px solid ${props => props.theme.colors.primary};
+    border: ${props => props.theme.border.normal} solid ${props => props.theme.colors.primary};
   }
   
   iframe {
-    width: 100%;
-    max-width: 800px;
-    height: 450px;
-    border: 2px solid ${props => props.theme.colors.primary};
+  width: 100%;
+  max-width: ${props => props.theme.sizes.mediaMaxWidth};
+  height: ${props => props.theme.sizes.iframeHeight};
+    border: ${props => props.theme.border.normal} solid ${props => props.theme.colors.primary};
   }
 `;
 
+const MediaItem = styled.div`
+  margin-bottom: ${props => props.theme.spacing.large};
+`;
+
 const SkillsList = styled.ul`
-  list-style-type: square;
-  padding-left: 20px;
+  list-style-type: ${props => props.theme.listStyleType || 'square'};
+  padding-left: ${props => props.theme.spacing.large};
   
   li {
-    margin-bottom: 10px;
-    font-size: ${props => props.theme.fontSize.small};
-    line-height: 19px;
+  margin-bottom: ${props => props.theme.spacing.small};
+  font-size: ${props => props.theme.fontSize.small};
+  line-height: ${props => props.theme.lineHeight.small};
     font-family: ${props => props.theme.fontFamily};
   }
 `;
@@ -97,14 +101,14 @@ const PagProjectDetail = () => {
       return (
         <MediaContainer>
           {project.mediaSrcs.map((src, index) => (
-            <div key={index} style={{ marginBottom: '20px' }}>
+            <MediaItem key={index}>
               <a href={src} target="_blank" rel="noopener noreferrer">
                 <img src={src} alt={project.mediaAlts[index]} />
               </a>
               {project.mediaAlts[index] && (
                 <AtmText><em>{project.mediaAlts[index]}</em></AtmText>
               )}
-            </div>
+            </MediaItem>
           ))}
         </MediaContainer>
       );
@@ -141,7 +145,6 @@ const PagProjectDetail = () => {
     <Main>
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('links.title')}</AtmHeading>}
           right={
             <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
@@ -156,16 +159,11 @@ const PagProjectDetail = () => {
       <MolSection>
         {/* Date (left) + Title & Intro (right) */}
         <MolTwoColumn
-          leftWidth="20%"
+          leftWidth={'20%'}
           left={
             <DateRange>
               <AtmHeading level={3}>{project.startDate}</AtmHeading>
-              {project.endDate && (
-                <>
-                  <span>-</span>
-                  <AtmHeading level={3}>{project.endDate}</AtmHeading>
-                </>
-              )}
+              <AtmHeading level={3}>{project.endDate}</AtmHeading>
             </DateRange>
           }
           right={
@@ -179,7 +177,6 @@ const PagProjectDetail = () => {
         {/* Context */}
         {hasTranslation(`${detailsKey}.context`) && (
           <MolTwoColumn
-            leftWidth="20%"
             left={<AtmHeading level={3}>{currentLanguage === 'en' ? 'Project Context' : 'Contexte du Projet'}</AtmHeading>}
             right={<AtmText>{t(`${detailsKey}.context`)}</AtmText>}
           />
@@ -188,7 +185,6 @@ const PagProjectDetail = () => {
         {/* Role */}
         {hasTranslation(`${detailsKey}.role`) && (
           <MolTwoColumn
-            leftWidth="20%"
             left={<AtmHeading level={3}>{currentLanguage === 'en' ? 'My Role & Responsibilities' : 'Mon Rôle & Responsabilités'}</AtmHeading>}
             right={<AtmText>{t(`${detailsKey}.role`)}</AtmText>}
           />
@@ -197,7 +193,6 @@ const PagProjectDetail = () => {
         {/* Technologies */}
         {hasTranslation(`${detailsKey}.technologies`) && (
           <MolTwoColumn
-            leftWidth="20%"
             left={<AtmHeading level={3}>{currentLanguage === 'en' ? 'Technologies Used' : 'Technologies Utilisées'}</AtmHeading>}
             right={<AtmText>{t(`${detailsKey}.technologies`)}</AtmText>}
           />
@@ -206,7 +201,6 @@ const PagProjectDetail = () => {
         {/* Skills */}
         {hasTranslation(`${detailsKey}.skills`) && Array.isArray(t(`${detailsKey}.skills`)) && (
           <MolTwoColumn
-            leftWidth="20%"
             left={<AtmHeading level={3}>{currentLanguage === 'en' ? 'Skills Developed' : 'Compétences Développées'}</AtmHeading>}
             right={
               <SkillsList>
@@ -221,7 +215,6 @@ const PagProjectDetail = () => {
         {/* Takeaways */}
         {hasTranslation(`${detailsKey}.takeaways`) && (
           <MolTwoColumn
-            leftWidth="20%"
             left={<AtmHeading level={3}>{currentLanguage === 'en' ? 'Key Takeaways' : 'Points Clés'}</AtmHeading>}
             right={<AtmText>{t(`${detailsKey}.takeaways`)}</AtmText>}
           />
@@ -230,7 +223,6 @@ const PagProjectDetail = () => {
         {/* Links (linkUrl + itchUrl) */}
         {(hasTranslation(`${detailsKey}.linkUrl`) || hasTranslation(`${detailsKey}.itchUrl`)) && (
           <MolTwoColumn
-            leftWidth="20%"
             left={<AtmHeading level={3}>{currentLanguage === 'en' ? 'Links' : 'Liens'}</AtmHeading>}
             right={
               <>
@@ -254,7 +246,6 @@ const PagProjectDetail = () => {
         {/* Trailer */}
         {hasTranslation(`${detailsKey}.trailer`) && (
           <MolTwoColumn
-            leftWidth="20%"
             left={<AtmHeading level={3}>{currentLanguage === 'en' ? 'Trailer' : 'Bande-annonce'}</AtmHeading>}
             right={<AtmText><strong>{t(`${detailsKey}.trailer`)}</strong></AtmText>}
           />

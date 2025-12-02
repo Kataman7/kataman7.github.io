@@ -18,13 +18,13 @@ const ProjectsContainer = styled.div`
 const ProjectDate = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: ${props => props.theme.spacing.xs};
 `;
 
 const DateRange = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: ${props => props.theme.spacing.small};
 `;
 
 const OrgProjectsList = () => {
@@ -38,7 +38,6 @@ const OrgProjectsList = () => {
       {projects.map((project, index) => (
         <MolTwoColumn
           key={index}
-          leftWidth="20%"
           left={
             <ProjectDate>
               {project.endDate ? (

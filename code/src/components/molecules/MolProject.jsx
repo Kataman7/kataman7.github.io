@@ -7,17 +7,15 @@ import { useTranslation } from '../../i18n/LanguageContext';
 import AtmSimpleLink from '../atoms/AtmSimpleLink';
 
 const ProjectDate = styled.div`
-  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  align-items: center;
+  gap: ${props => props.theme.spacing.xs};
 `;
 
 const ProjectContent = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: ${props => props.theme.spacing.medium};
 `;
 
 const MolProject = ({ 
@@ -32,11 +30,10 @@ const MolProject = ({
   return (
     <>
       <ProjectDate>
-        <AtmHeading level={5}>{startDate}</AtmHeading>
+        <AtmHeading level={3}>{startDate}</AtmHeading>
         {endDate && (
           <>
-            <AtmHeading level={5}>-</AtmHeading>
-            <AtmHeading level={5}>{endDate}</AtmHeading>
+            <AtmHeading level={3}>{endDate}</AtmHeading>
           </>
         )}
       </ProjectDate>
@@ -44,7 +41,6 @@ const MolProject = ({
         <AtmHeading level={4}>
           <AtmSimpleLink href={projectUrl}>{t(titleKey)}</AtmSimpleLink>
         </AtmHeading>
-        coucou
         <AtmText>{t(descriptionKey)}</AtmText>
       </ProjectContent>
     </>

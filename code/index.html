@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Antonin Chabaud-Pech</title>
-    <link rel="stylesheet" href="/src/styles/globals.css" />
+    <!-- Preload local fonts (optional) - make sure files exist in public/resources/font -->
+    <!-- The project includes TTF/OTF font files; preload matching formats to avoid 404s. -->
+    <link rel="preload" href="/resources/font/Jersey20.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/resources/font/Chillax.otf" as="font" type="font/otf" crossorigin>
   </head>
   <body>
     <div id="root"></div>

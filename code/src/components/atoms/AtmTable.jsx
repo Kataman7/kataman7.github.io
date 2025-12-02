@@ -4,21 +4,21 @@ import styled from 'styled-components';
 const TableContainer = styled.table`
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: ${props => props.theme.spacing.large} 0;
   font-size: ${props => props.theme.fontSize.small};
   font-family: ${props => props.theme.fontFamily};
   animation: slideUp 1s ease-out forwards;
 `;
 
 const TableCell = styled.td`
-  padding: 10px;
+  padding: ${props => props.theme.spacing.small};
   text-align: left;
   box-shadow: 2px 2px ${props => props.theme.colors.background},
     4px 4px ${props => props.theme.colors.primary};
 `;
 
 const TableHeader = styled.th`
-  padding: 10px;
+  padding: ${props => props.theme.spacing.small};
   text-align: left;
   background-color: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.background};

@@ -6,14 +6,14 @@ import { useTranslation } from '../../i18n/LanguageContext';
 const SkillsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: ${props => props.theme.spacing.large};
   width: 100%;
 `;
 
 const SkillItem = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: ${props => props.theme.spacing.small};
 `;
 
 const SkillTitle = styled(AtmHeading)`

@@ -56,8 +56,8 @@ export const translations = {
       en: "About me"
     },
     content: {
-      fr: "Passionné par le développement logiciel, je conçois des logiciels, des applications mobiles et des sites web. Je dirige également une micro-entreprise spécialisée dans la conception et la vente de claviers personnalisés, ce qui reflète mon esprit d'entreprise et ma passion pour la technologie. J'aime les défis qui me permettent d'enrichir mes compétences et de participer à des projets innovants.",
-      en: "Passionate about software development, I design software, mobile applications and websites. I also run a micro-business specialising in the design and sale of customised keyboards, which reflects my entrepreneurial spirit and passion for technology. I enjoy challenges that allow me to enrich my skills and take part in innovative projects."
+      fr: "Passionné par le développement logiciel, je conçois des logiciels, des jeux vidéo et des sites web. Je dirige également une micro-entreprise spécialisée dans la conception et la vente de claviers personnalisés, ce qui reflète mon esprit d'entreprise et ma passion pour la technologie. J'aime les défis qui me permettent d'enrichir mes compétences et de participer à des projets innovants.",
+      en: "Passionate about software development, I design software, video games and websites. I also run a micro-business specialising in the design and sale of customised keyboards, which reflects my entrepreneurial spirit and passion for technology. I enjoy challenges that allow me to enrich my skills and take part in innovative projects."
     }
   },
 
@@ -110,16 +110,16 @@ Niveau : L3*/
       en: "Expertise"
     },
     content1: {
-      fr: "Je me spécialise dans la conception et le développement d'applications web et d'interfaces utilisateur, ainsi que dans la conception et la gestion de bases de données. J'ai de l'expérience dans l'administration de systèmes de communication informatiques complexes, garantissant des infrastructures fiables et efficaces.",
-      en: "I specialise in the design and development of web applications and user interfaces, as well as the design and management of databases. I am experienced in the administration of complex IT communication systems, ensuring reliable and efficient infrastructures."
+      fr: "Je me spécialise dans la conception et le développement d'applications web, de jeux vidéo et d'interfaces utilisateur, ainsi que dans la conception et la gestion de bases de données. J'ai de l'expérience dans l'administration de systèmes de communication informatiques complexes, garantissant des infrastructures fiables et efficaces.",
+      en: "I specialise in the design and development of web applications, video games and user interfaces, as well as the design and management of databases. I am experienced in the administration of complex IT communication systems, ensuring reliable and efficient infrastructures."
     },
     content2: {
-      fr: "J'ai également une expertise dans la conception et l'assemblage de claviers personnalisés, ainsi que dans la construction d'ordinateurs. Je suis aussi passionné par le développement de jeux vidéo et la composition musicale.",
-      en: "I also have expertise in custom keyboard design and assembly, as well as computer building. I am also passionate about video game development and music composition."
+      fr: "J'ai également une expertise dans la conception et l'assemblage de claviers personnalisés, ainsi que dans la construction d'ordinateurs. Je suis aussi passionné par la composition musicale.",
+      en: "I also have expertise in custom keyboard design and assembly, as well as computer building. I am also passionate about music composition."
     },
     content3: {
-      fr: "Locuteur natif français, connaissances d'anglais niveau B2. Titulaire d'un permis de conduire complet valide.",
-      en: "Native French speaker, knowledge of English at B2 level. Holder of a full valid driving licence."
+      fr: "Locuteur natif français, niveau d'anglais B2. Titulaire du permis de conduire.",
+      en: "Native French speaker with B2 level English. Full driving licence holder."
     }
   },
 
@@ -176,9 +176,13 @@ Niveau : L3*/
       }
     },
     c4w: {
-      content: {
+      stage: {
         fr: "J'ai effectué un stage de 3 mois chez C4W du 13 janvier au 5 avril 2024. C4W est une entreprise de développement logiciel spécialisée dans les solutions CAO (Conception Assistée par Ordinateur) pour le domaine médical. Pendant mon stage, j'ai acquis une expérience pratique dans le développement de solutions logicielles personnalisées pour les applications médicales.",
         en: "I did a 3-month internship at C4W from 13 January to 5 April 2024. C4W is a software development company specialising in CAD (Computer-Aided Design) solutions for the medical field. During my internship I gained hands-on experience in the development of customised software solutions for medical applications."
+      },
+      alternance: {
+        fr: "",
+        en: ""
       }
     }
   },

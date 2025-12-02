@@ -12,6 +12,7 @@ import MolContactForm from '../components/molecules/MolContactForm';
 import AtmQuote from '../components/atoms/AtmQuote';
 import OrgProjectsList from '../components/organisms/OrgProjectsList';
 import MolFooterClock from '../components/molecules/MolFooterClock';
+import OrgFooter from '../components/organisms/OrgFooter';
 import AtmSimpleLink from '../components/atoms/AtmSimpleLink';
 
 const Main = styled.main`
@@ -38,7 +39,6 @@ const PagHome = () => {
       {/* Links Section */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('links.title')}</AtmHeading>}
           right={
             <MolNavBar>
@@ -65,7 +65,6 @@ const PagHome = () => {
       {/* About Section */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('about.title')}</AtmHeading>}
           right={<AtmText>{t('about.content')}</AtmText>}
         />
@@ -74,7 +73,6 @@ const PagHome = () => {
       {/* Education Section */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('education.title')}</AtmHeading>}
           right={
             <MolTwoColumn 
@@ -101,7 +99,6 @@ const PagHome = () => {
       {/* Expertise Section */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('expertise.title')}</AtmHeading>}
           right={
             <>
@@ -116,7 +113,6 @@ const PagHome = () => {
       {/* Experience Section */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('experience.title')}</AtmHeading>}
           right={
             <>
@@ -141,7 +137,6 @@ const PagHome = () => {
       {/* Programming Languages Section */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('languages.title')}</AtmHeading>}
           right={
             <MolSkills 
@@ -154,7 +149,6 @@ const PagHome = () => {
       {/* Projects Section */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('projects.title')}</AtmHeading>}
           right={<AtmText>{t('projects.intro')}</AtmText>}
         />
@@ -164,7 +158,6 @@ const PagHome = () => {
       {/* Hobbies Section */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('hobbies.title')}</AtmHeading>}
           right={<AtmText>{t('hobbies.list')}</AtmText>}
         />
@@ -173,7 +166,6 @@ const PagHome = () => {
       {/* Contact Section */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('contact.title')}</AtmHeading>}
           right={
             <>
@@ -194,7 +186,6 @@ const PagHome = () => {
       {/* Quotes Section */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('quotes.title')}</AtmHeading>}
           right={<AtmQuote />}
         />
@@ -203,14 +194,13 @@ const PagHome = () => {
       {/* Sign-off Section */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('signoff.title')}</AtmHeading>}
           right={<AtmText>{t('signoff.content')}</AtmText>}
         />
       </MolSection>
 
       {/* Footer/Clock Section */}
-      <MolFooterClock timeTitle={t('footer.timeInSete')} />
+      <OrgFooter timeTitle={t('footer.timeInSete')} />
     </Main>
   );
 };

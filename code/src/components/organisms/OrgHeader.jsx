@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import AtmHeading from '../atoms/AtmHeading';
+import AtmHeading from '../atoms/AtmHeading'
 import { useTranslation } from '../../i18n/LanguageContext';
 import MolSection from '../molecules/MolSection';
 import MolTwoColumn from '../molecules/MolTwoColumn';
@@ -17,9 +17,8 @@ const OrgHeader = ({ titleKey = "portfolio" }) => {
 
   return (
     
-       <MolSection>
+        <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<div></div>}
           right={
             <HeaderContainer>

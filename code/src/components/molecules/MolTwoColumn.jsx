@@ -11,28 +11,28 @@ const TwoColumnContainer = styled.div`
 `;
 
 const LeftColumn = styled.div`
-  flex: 0 0 ${props => props.leftWidth || '20%'};
-  padding: 8px 12px;
+  flex: 0 0 ${props => props.$leftWidth || props.theme.layout?.leftWidth || '20%'};
+  padding-right: ${props => props.theme.spacing.medium};
 
   @media (max-width: 768px) {
     flex: 1;
     width: 100%;
+    margin-bottom: ${props => props.theme.spacing.medium};
   }
 `;
 
 const RightColumn = styled.div`
   flex: 1;
-  padding: 8px 12px;
 
   @media (max-width: 768px) {
     width: 100%;
   }
 `;
 
-const MolTwoColumn = ({ left, right, leftWidth = '20%' }) => {
+const MolTwoColumn = ({ left, right, leftWidth }) => {
   return (
     <TwoColumnContainer>
-      <LeftColumn leftWidth={leftWidth}>{left}</LeftColumn>
+      <LeftColumn $leftWidth={leftWidth}>{left}</LeftColumn>
       <RightColumn>{right}</RightColumn>
     </TwoColumnContainer>
   );

@@ -25,7 +25,7 @@ export const projectsData = {
     descriptionKey: 'projects.myAvatar.description',
     detailsKey: 'projectDetails.myAvatar',
     mediaType: 'image',
-    mediaSrc: '../../resources/images/my-avatar.webp',
+    mediaSrc: '../../resources/images/my-avatar.png',
     mediaAlt: 'My Avatar Main Interface'
   },
   'very-bad-split': {

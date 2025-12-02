@@ -12,18 +12,18 @@ const AppContainer = styled.div`
   background-color: ${props => props.theme.colors.background};
   color: ${props => props.theme.colors.primary};
   min-height: 100vh;
-  padding: 0 5vw 20px 5vw;
+  padding: ${props => props.theme.spacing.large} 5vw ${props => props.theme.spacing.large} 5vw;
   
   @media (min-width: 700px) {
-    padding: 0 7vw 20px 7vw;
+    padding: ${props => props.theme.spacing.large} 7vw ${props => props.theme.spacing.large} 7vw;
   }
   
   @media (min-width: 800px) {
-    padding: 0 10vw 20px 10vw;
+    padding: ${props => props.theme.spacing.large} 10vw ${props => props.theme.spacing.large} 10vw;
   }
   
   @media (min-width: 1400px) {
-    padding: 0 28vw 20px 28vw;
+    padding: ${props => props.theme.spacing.large} 28vw ${props => props.theme.spacing.large} 28vw;
   }
   
   font-family: ${props => props.theme.fontFamily};
@@ -40,7 +40,7 @@ const App = () => {
         <BrowserRouter>
           <AppContainer>
             <MolThemeToggle />
-            <OrgHeader titleKey="name" />
+              <OrgHeader titleKey="name" />
             <AppRoutes />
           </AppContainer>
         </BrowserRouter>

@@ -7,11 +7,11 @@ const Quote = styled.blockquote`
   font-style: italic;
   text-align: center;
   margin: auto;
-  padding: 20px;
+  padding: ${props => props.theme.spacing.large};
   border-left: 4px solid ${props => props.theme.colors.primary};
   
   p {
-    margin-bottom: 10px;
+  margin-bottom: ${props => props.theme.spacing.small};
     font-size: ${props => props.theme.fontSize.medium};
   }
   

@@ -155,3 +155,12 @@ Pour déployer en production :
 ## Licence
 
 ISC
+
+## Fonts
+
+If you want to use the custom fonts included with this project (PixelifySans and Chillax), drop the font files into `public/resources/font` and name them accordingly:
+
+- `PixelifySans.woff2`, `PixelifySans.woff`, `PixelifySans.ttf`
+- `Chillax.woff2`, `Chillax.woff`, `Chillax.ttf`
+
+The app looks for those files at `/resources/font/...` (served from the `public` folder). If the files are missing, the site gracefully falls back to system fonts.

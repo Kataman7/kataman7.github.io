@@ -6,13 +6,13 @@ import { useTranslation } from '../../i18n/LanguageContext';
 const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: ${props => props.theme.spacing.medium};
   margin: 0 auto;
 
   div {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: ${props => props.theme.spacing.small};
   }
 
   label {
@@ -21,7 +21,7 @@ const ContactForm = styled.form`
   }
 
   input, textarea {
-    padding: 10px;
+    padding: ${props => props.theme.spacing.small};
     border: ${props => props.theme.border.normal} solid ${props => props.theme.colors.primary};
     background-color: ${props => props.theme.colors.background};
     color: ${props => props.theme.colors.primary};
@@ -30,7 +30,7 @@ const ContactForm = styled.form`
   }
 
   button {
-    margin-top: 10px;
+    margin-top: ${props => props.theme.spacing.small};
   }
 `;
 

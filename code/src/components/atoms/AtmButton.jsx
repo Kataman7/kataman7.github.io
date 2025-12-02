@@ -9,7 +9,7 @@ const StyledButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: ${props => props.theme.spacing.xs};
   border: ${props => props.theme.border.normal} solid ${props => props.theme.colors.primary};
   box-shadow: ${props => props.theme.boxShadow.button};
   font-family: ${props => props.theme.fontFamily};
@@ -25,8 +25,8 @@ const StyledButton = styled.button`
   }
 
   img {
-    width: 25px;
-    height: 25px;
+    width: ${props => props.theme.spacing.xl};
+    height: ${props => props.theme.spacing.xl};
   }
 `;
 

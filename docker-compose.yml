@@ -15,9 +15,24 @@ services:
       - CHOKIDAR_USEPOLLING=true
 
   build:
-    build: ./code
+    build:
+      context: ./code
+      dockerfile: Dockerfile
+    image: atomic-portfolio:latest
     ports:
-      - "80:80"
+      - "8081:80" # avoid system port conflict, maps host 8081 -> container 80
     restart: unless-stopped
+    # No volume mapping here so the image's /usr/share/nginx/html (dist) is served by nginx
+
+  exporter:
+    image: atomic-portfolio:latest
+    depends_on:
+      - build
     volumes:
-      - ./build:/usr/share/nginx/html
+      # Maps the project root to /tmp/export in the container.
+      # CAUTION: This will copy files directly into your repo root (overwriting files
+      # if they have the same name). Consider using a dedicated folder (e.g. ./build
+      # or ./exported-build) if you want to avoid overwriting project files.
+      - ./:/tmp/export
+    command: /bin/sh -c "mkdir -p /tmp/export && cp -r /usr/share/nginx/html/* /tmp/export/"
+    restart: 'no'

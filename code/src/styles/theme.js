@@ -7,6 +7,7 @@ export const portfolioTheme = {
     hovered: '#ffffff',
   },
   spacing: {
+    xs: '5px',
     small: '10px',
     medium: '15px',
     large: '20px',
@@ -15,11 +16,22 @@ export const portfolioTheme = {
     section: '30px', // Espacement entre sections
   },
   fontSize: {
-    small: '14px', // 9px pour h5, small pour p
-    medium: '18px', // medium pour navBar li
-    large: '22px', // large pour h4
-    xl: '28px', // pour h2, h3
-    xxl: '38px', // pour h1
+    small: '20px', // ~14px * 1.4
+    medium: '25px', // ~18px * 1.4
+    large: '31px', // ~22px * 1.4
+    xl: '39px', // ~28px * 1.4
+    xxl: '53px', // ~38px * 1.4
+  },
+  lineHeight: {
+    small: '27px',
+  },
+  sizes: {
+    mediaMaxWidth: '800px',
+    iframeHeight: '450px',
+  },
+  listStyleType: 'square',
+  layout: {
+    leftWidth: '20%'
   },
   border: {
     normal: '2px',
@@ -31,7 +43,11 @@ export const portfolioTheme = {
     button: '2px 2px #000000, 4px 4px #ffffff',
     buttonHover: '0px 0px',
   },
-  fontFamily: "'Chillax', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif'",
+  fontFamily: "'Jersey20', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif'",
+  selection: {
+    background: '#ffffff',
+    color: '#000000'
+  },
 };
 
 export const lightTheme = {
@@ -43,6 +59,7 @@ export const lightTheme = {
     hovered: '#000000',
   },
   spacing: {
+    xs: '5px',
     small: '10px',
     medium: '15px',
     large: '20px',
@@ -51,23 +68,39 @@ export const lightTheme = {
     section: '30px', // Espacement entre sections
   },
   fontSize: {
-    small: '14px',
-    medium: '18px',
-    large: '22px',
-    xl: '28px',
-    xxl: '38px',
+    small: '16px', // ~14px * 1.16
+    medium: '21px', // ~18px * 1.16
+    large: '26px', // ~22px * 1.16
+    xl: '32px', // ~28px * 1.16
+    xxl: '44px', // ~38px * 1.16
   },
+  lineHeight: {
+    small: '22px',
+  },
+  sizes: {
+    mediaMaxWidth: '800px',
+    iframeHeight: '450px',
+  },
+  layout: {
+    leftWidth: '20%'
+  },
+
+  listStyleType: 'disc',
   border: {
     normal: '2px',
   },
   borderRadius: {
-    normal: '0px',
+    normal: '3px',
   },
   boxShadow: {
-    button: '2px 2px #ffffff, 4px 4px #000000',
+    button: '2px 2px #ffffff, 3.5px 3.5px #000000',
     buttonHover: '0px 0px',
   },
   fontFamily: "'Chillax', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif'",
+  selection: {
+    background: '#000000',
+    color: '#ffffff'
+  },
 };
 
 export const themes = {

@@ -11,7 +11,7 @@ const SimpleTableContainer = styled(AtmTable)`
     background-color: transparent;
     color: inherit;
     border: none;
-    padding: 8px 12px;
+    padding: ${props => props.theme.spacing.small} 12px;
   }
 
   th {
@@ -30,19 +30,19 @@ const MolTable = ({ children, ...props }) => {
 
 // Composants pour les colonnes prédéfinies
 const SmallColumn = styled(AtmTable.Td)`
-  width: 20%;
+  width: ${props => props.theme.layout?.leftWidth || '20%'};
 `;
 
 const LargeColumn = styled(AtmTable.Td)`
-  width: 80%;
+  width: calc(100% - ${props => props.theme.layout?.leftWidth || '20%'});
 `;
 
 const SmallHeader = styled(AtmTable.Th)`
-  width: 20%;
+  width: ${props => props.theme.layout?.leftWidth || '20%'};
 `;
 
 const LargeHeader = styled(AtmTable.Th)`
-  width: 80%;
+  width: calc(100% - ${props => props.theme.layout?.leftWidth || '20%'});
 `;
 
 MolTable.SmallTh = SmallHeader;

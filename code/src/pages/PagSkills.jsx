@@ -20,7 +20,6 @@ const PagSkills = () => {
 
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('links.title')}</AtmHeading>}
           right={
             <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
@@ -35,7 +34,6 @@ const PagSkills = () => {
       {/* Learning Section */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('learning.title')}</AtmHeading>}
           right={
             <>
@@ -50,7 +48,6 @@ const PagSkills = () => {
       {/* Develop Skills */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('develop.title')}</AtmHeading>}
           right={
             <>
@@ -83,7 +80,6 @@ const PagSkills = () => {
       {/* Optimize Skills */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('optimize.title')}</AtmHeading>}
           right={
             <>
@@ -116,7 +112,6 @@ const PagSkills = () => {
       {/* Verify Skills */}
       <MolSection>
         <MolTwoColumn
-          leftWidth="20%"
           left={<AtmHeading level={3}>{t('verify.title')}</AtmHeading>}
           right={
             <>
