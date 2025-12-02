@@ -117,18 +117,20 @@ const PagHome = () => {
           right={
             <>
               <AtmHeading level={4}>
+                <AtmSimpleLink href="https://www.c4w.com" target="_blank">
+                  C4W.com
+                </AtmSimpleLink>
+              </AtmHeading>
+              <AtmText>{t('experience.c4w.stage')}</AtmText>
+              <AtmText>{t('experience.c4w.alternance')}</AtmText>
+
+
+              <AtmHeading level={4}>
                 <AtmSimpleLink href="https://www.picokeebs.fr" target="_blank">
                   PicoKeebs.fr
                 </AtmSimpleLink>
               </AtmHeading>
               <AtmText>{t('experience.picokeebs.content')}</AtmText>
-
-              <AtmHeading level={4}>
-                <AtmSimpleLink href="https://www.c4w.com" target="_blank">
-                  C4W.com
-                </AtmSimpleLink>
-              </AtmHeading>
-              <AtmText>{t('experience.c4w.content')}</AtmText>
             </>
           }
         />

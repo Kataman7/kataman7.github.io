@@ -181,8 +181,8 @@ Niveau : L3*/
         en: "I did a 3-month internship at C4W from 13 January to 5 April 2024. C4W is a software development company specialising in CAD (Computer-Aided Design) solutions for the medical field. During my internship I gained hands-on experience in the development of customised software solutions for medical applications."
       },
       alternance: {
-        fr: "",
-        en: ""
+        fr: "Dans la continuité de mon stage, j'ai effectué une alternance chez C4W de septembre 2025 à août 2026 pendant toute ma troisième année de BUT. J'ai poursuivi l'amélioration de Smile Web tout en développant un backend en C++ avec des fonctions de plus bas niveau permettant de travailler directement sur les mesh. Cette approche a permis d'apporter de nouvelles fonctionnalités impossibles à implémenter uniquement en JavaScript.",
+        en: "Following my internship, I completed a work-study program at C4W from September 2025 to August 2026 throughout my third year of BUT. I continued improving Smile Web while developing a C++ backend with lower-level functions for working directly with meshes. This approach enabled the implementation of new features that would have been impossible to achieve with JavaScript alone."
       }
     }
   },
