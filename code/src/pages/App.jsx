@@ -3,7 +3,6 @@ import { BrowserRouter } from 'react-router-dom'
 import styled from 'styled-components'
 import ThemeProviderWrapper from '../styles/ThemeProvider'
 import { GlobalStyles } from '../styles/globalStyles'
-import MolThemeToggle from '../components/molecules/MolThemeToggle'
 import { LanguageProvider } from '../i18n/LanguageContext'
 import OrgHeader from '../components/organisms/OrgHeader'
 import AppRoutes from '../routes/routes'
@@ -39,8 +38,7 @@ const App = () => {
         <GlobalStyles />
         <BrowserRouter>
           <AppContainer>
-            <MolThemeToggle />
-              <OrgHeader titleKey="name" />
+            <OrgHeader titleKey="name" />
             <AppRoutes />
           </AppContainer>
         </BrowserRouter>

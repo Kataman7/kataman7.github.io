@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { useTranslation } from '../i18n/LanguageContext';
 import MolSection from '../components/molecules/MolSection';
@@ -13,6 +14,7 @@ import AtmQuote from '../components/atoms/AtmQuote';
 import OrgProjectsList from '../components/organisms/OrgProjectsList';
 import MolFooterClock from '../components/molecules/MolFooterClock';
 import OrgFooter from '../components/organisms/OrgFooter';
+import MolThemeToggle from '../components/molecules/MolThemeToggle';
 import AtmSimpleLink from '../components/atoms/AtmSimpleLink';
 
 const Main = styled.main`
@@ -21,6 +23,16 @@ const Main = styled.main`
 
 const PagHome = () => {
   const { t } = useTranslation();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const element = document.getElementById(location.state.scrollTo);
+      if (element) {
+        element.scrollIntoView();
+      }
+    }
+  }, [location.state]);
 
   // Skills data for programming languages
   const programmingSkills = [
@@ -57,6 +69,7 @@ const PagHome = () => {
               <AtmButtonLink to="/skills">
                 {t('links.skills')}
               </AtmButtonLink>
+              <MolThemeToggle />
             </MolNavBar>
           }
         />

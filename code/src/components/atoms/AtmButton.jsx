@@ -13,6 +13,7 @@ const StyledButton = styled.button`
   border: ${props => props.theme.border.normal} solid ${props => props.theme.colors.primary};
   box-shadow: ${props => props.theme.boxShadow.button};
   font-family: ${props => props.theme.fontFamily};
+  font-size: ${props => props.theme.fontSize.small};
   text-decoration: none;
   cursor: pointer;
   overflow: hidden;

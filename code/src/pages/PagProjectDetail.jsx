@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { useTranslation } from '../i18n/LanguageContext';
 import MolSection from '../components/molecules/MolSection';
@@ -40,14 +40,12 @@ const MediaContainer = styled.div`
   width: 100%;
   max-width: ${props => props.theme.sizes.mediaMaxWidth};
     height: auto;
-    border: ${props => props.theme.border.normal} solid ${props => props.theme.colors.primary};
   }
   
   iframe {
   width: 100%;
   max-width: ${props => props.theme.sizes.mediaMaxWidth};
   height: ${props => props.theme.sizes.iframeHeight};
-    border: ${props => props.theme.border.normal} solid ${props => props.theme.colors.primary};
   }
 `;
 
@@ -70,6 +68,7 @@ const SkillsList = styled.ul`
 const PagProjectDetail = () => {
   const { projectId } = useParams();
   const { t, currentLanguage } = useTranslation();
+  const navigate = useNavigate();
   
   const project = projectsData[projectId];
   
@@ -148,7 +147,7 @@ const PagProjectDetail = () => {
           left={<AtmHeading level={3}>{t('links.title')}</AtmHeading>}
           right={
             <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
-              <AtmButtonLink href="/">
+              <AtmButtonLink onClick={() => navigate('/', { state: { scrollTo: projectId } })}>
                 {t('projectDetails.backToPortfolio')}
               </AtmButtonLink>
             </div>

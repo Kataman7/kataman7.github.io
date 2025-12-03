@@ -36,8 +36,8 @@ const OrgProjectsList = () => {
   return (
     <ProjectsContainer>
       {projects.map((project, index) => (
-        <MolTwoColumn
-          key={index}
+        <div key={index} id={project.id}>
+          <MolTwoColumn
           left={
             <ProjectDate>
               {project.endDate ? (
@@ -61,6 +61,7 @@ const OrgProjectsList = () => {
             </>
           }
         />
+        </div>
       ))}
     </ProjectsContainer>
   );
