@@ -126,40 +126,40 @@ Niveau : L3*/
   // Programming languages
   languages: {
     title: {
-      fr: "Langages",
-      en: "Languages"
+      fr: "Technologies",
+      en: "Technologies"
     },
     csharp: {
-      fr: "C#",
-      en: "C#"
+      fr: "C# - Raylib",
+      en: "C# - Raylib"
     },
     python: {
-      fr: "Python",
-      en: "Python"
+      fr: "Python - Flask",
+      en: "Python - Flask"
     },
     java: {
-      fr: "Java",
-      en: "Java"
+      fr: "Java - JavaFX",
+      en: "Java - JavaFX"
     },
     c: {
       fr: "C",
       en: "C"
     },
     sql: {
-      fr: "SQL & PLSQL",
-      en: "SQL & PLSQL"
+      fr: "SQL - PLSQL - NoSQL",
+      en: "SQL - PLSQL - NoSQL"
     },
     javascript: {
-      fr: "JavaScript",
-      en: "JavaScript"
+      fr: "JS - React - Three",
+      en: "JS - React - Three"
     },
     php: {
-      fr: "PHP",
-      en: "PHP"
+      fr: "PHP - Symphony",
+      en: "PHP - Symphony"
     },
     lua: {
-      fr: "Lua",
-      en: "Lua"
+      fr: "Lua - Pico8",
+      en: "Lua - Pico8"
     }
   },
 

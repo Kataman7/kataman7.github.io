@@ -58,9 +58,6 @@ const AtmQuote = () => {
     <Quote>
       <p>"{quote.en}"</p>
       <cite>{quote.author}</cite>
-      <div style={{ marginTop: '12px' }}>
-        <button onClick={fetchQuote} style={{ padding: '6px 10px', cursor: 'pointer' }}>Rafraîchir</button>
-      </div>
     </Quote>
   );
 };
