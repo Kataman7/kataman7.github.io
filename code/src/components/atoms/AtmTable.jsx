@@ -8,13 +8,14 @@ const TableContainer = styled.table`
   font-size: ${props => props.theme.fontSize.small};
   font-family: ${props => props.theme.fontFamily};
   animation: slideUp 1s ease-out forwards;
+  box-shadow: ${props => props.theme.boxShadow.button};
+  border-radius: ${props => props.theme.borderRadius.normal};
+  overflow: hidden;
 `;
 
 const TableCell = styled.td`
   padding: ${props => props.theme.spacing.small};
   text-align: left;
-  box-shadow: 2px 2px ${props => props.theme.colors.background},
-    4px 4px ${props => props.theme.colors.primary};
 `;
 
 const TableHeader = styled.th`
@@ -23,8 +24,6 @@ const TableHeader = styled.th`
   background-color: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.background};
   font-weight: bold;
-  box-shadow: 2px 2px ${props => props.theme.colors.background},
-    4px 4px ${props => props.theme.colors.primary};
 `;
 
 const TableBody = styled.tbody`
@@ -36,11 +35,6 @@ const TableBody = styled.tbody`
   tr:nth-child(odd) {
     background-color: ${props => props.theme.colors.primary};
     color: ${props => props.theme.colors.background};
-  }
-
-  td {
-    box-shadow: 2px 2px ${props => props.theme.colors.background},
-      4px 4px ${props => props.theme.colors.primary};
   }
 
   tr td:first-child {
