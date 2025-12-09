@@ -36,6 +36,7 @@ const AppContent = () => {
   const { isLoading, isExiting } = useLoading();
   const [isInitialLoad, setIsInitialLoad] = React.useState(true);
   const [isInitialExiting, setIsInitialExiting] = React.useState(false);
+  const [contentReady, setContentReady] = React.useState(false);
 
   React.useEffect(() => {
     const loadFonts = async () => {
@@ -47,10 +48,14 @@ const AppContent = () => {
           document.fonts.ready
         ]);
         
+        // Marquer le contenu comme prêt (pour le rendre sous le loader)
+        setContentReady(true);
+        
         // Attendre que le navigateur applique les fonts
         await new Promise(resolve => setTimeout(resolve, LOADING_DURATIONS.initialLoadDelay));
       } catch (e) {
         console.warn('Font loading error:', e);
+        setContentReady(true);
       }
       
       setIsInitialExiting(true);
@@ -65,12 +70,14 @@ const AppContent = () => {
   return (
     <>
       <GlobalStyles />
-      <BrowserRouter>
-        <AppContainer $noTransition={isLoading || isInitialLoad}>
-          <OrgHeader titleKey="name" />
-          <AppRoutes />
-        </AppContainer>
-      </BrowserRouter>
+      {contentReady && (
+        <BrowserRouter>
+          <AppContainer $noTransition={isLoading || isInitialLoad}>
+            <OrgHeader titleKey="name" />
+            <AppRoutes />
+          </AppContainer>
+        </BrowserRouter>
+      )}
       {(isInitialLoad || isLoading) && <AtmLoader isExiting={isInitialLoad ? isInitialExiting : isExiting} />}
     </>
   );
