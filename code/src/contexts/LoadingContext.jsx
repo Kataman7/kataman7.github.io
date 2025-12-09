@@ -8,6 +8,7 @@ export const LOADING_DURATIONS = {
   fadeOut: 400,        // Durée fade out plus lent
   beforeChange: 400,   // Délai avant le changement (thème, langue, page)
   afterChange: 500,    // Délai après le changement
+  initialLoadDelay: 1500, // Délai minimum pour le premier chargement
 };
 
 export const LoadingProvider = ({ children }) => {

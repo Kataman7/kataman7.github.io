@@ -48,7 +48,7 @@ const AppContent = () => {
         ]);
         
         // Attendre que le navigateur applique les fonts
-        await new Promise(resolve => setTimeout(resolve, 100));
+        await new Promise(resolve => setTimeout(resolve, LOADING_DURATIONS.initialLoadDelay));
       } catch (e) {
         console.warn('Font loading error:', e);
       }
