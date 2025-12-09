@@ -1,10 +1,12 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import { themes } from './theme';
+import { useLoading } from '../contexts/LoadingContext';
 
 const ThemeContext = createContext();
 
 export const ThemeProviderWrapper = ({ children }) => {
+  const { withLoader } = useLoading();
   const [currentThemeName, setCurrentThemeName] = useState(() => {
     try {
       const stored = localStorage.getItem('theme');
@@ -25,12 +27,15 @@ export const ThemeProviderWrapper = ({ children }) => {
     }
   }, [currentThemeName]);
 
-  const setTheme = (themeName) => {
+  const setTheme = async (themeName) => {
     if (!Object.prototype.hasOwnProperty.call(themes, themeName)) {
       console.warn(`Unknown theme requested: ${themeName}. Falling back to 'light'.`);
       themeName = 'light';
     }
-    setCurrentThemeName(themeName);
+    
+    await withLoader(async () => {
+      setCurrentThemeName(themeName);
+    });
   };
 
   const toggleTheme = () => {

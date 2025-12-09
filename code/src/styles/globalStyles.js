@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { LOADING_DURATIONS } from '../contexts/LoadingContext';
 
 export const GlobalStyles = createGlobalStyle`
   /* Reset CSS */
@@ -10,28 +11,21 @@ export const GlobalStyles = createGlobalStyle`
 
   /* Add local fonts placed in public/resources/font/ */
   @font-face {
-    /* PixelifySans font - drop copies into public/resources/font/ */
     font-family: 'Jersey20';
     src: local('Jersey20'), local('Jersey 20'),
-         url('/resources/font/Jersey20.woff2') format('woff2'),
-         url('/resources/font/Jersey20.woff') format('woff'),
          url('/resources/font/Jersey20.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    font-display: block;
   }
 
   @font-face {
-    /* Chillax font - drop copies into public/resources/font/ */
     font-family: 'Chillax';
     src: local('Chillax'), local('Chillax Regular'),
-         url('/resources/font/Chillax.woff2') format('woff2'),
-         url('/resources/font/Chillax.woff') format('woff'),
-         url('/resources/font/Chillax.ttf') format('truetype'),
          url('/resources/font/Chillax.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    font-display: block;
   }
 
   /* Provide generic body styles using the theme */
@@ -39,8 +33,33 @@ export const GlobalStyles = createGlobalStyle`
     font-family: ${props => props.theme.fontFamily};
     background-color: ${props => props.theme.colors.background};
     color: ${props => props.theme.colors.primary};
+    transition: background-color ${LOADING_DURATIONS.fadeOut}ms ease-in-out, color ${LOADING_DURATIONS.fadeOut}ms ease-in-out;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Styliser la scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: ${props => props.theme.colors.background};
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: ${props => props.theme.colors.primary};
+    border-radius: ${props => props.theme.borderRadius.normal};
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: ${props => props.theme.colors.secondary};
+  }
+
+  /* Pour Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: ${props => props.theme.colors.primary} ${props => props.theme.colors.background};
   }
 
   /* Theme-aware text selection colors */

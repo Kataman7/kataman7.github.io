@@ -1,9 +1,11 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { translations } from './translations';
+import { useLoading } from '../contexts/LoadingContext';
 
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
+  const { withLoader } = useLoading();
   const [currentLanguage, setCurrentLanguage] = useState(() => {
     try {
       const stored = localStorage.getItem('language');
@@ -24,8 +26,10 @@ export const LanguageProvider = ({ children }) => {
     }
   }, [currentLanguage]);
 
-  const toggleLanguage = () => {
-    setCurrentLanguage(prev => prev === 'fr' ? 'en' : 'fr');
+  const toggleLanguage = async () => {
+    await withLoader(async () => {
+      setCurrentLanguage(prev => prev === 'fr' ? 'en' : 'fr');
+    });
   };
 
   const getNestedValue = (obj, path) => {

@@ -29,7 +29,7 @@ const AtmSimpleLink = ({ children, href, to, target, ...props }) => {
   // If 'to' is provided, use React Router Link (internal navigation)
   if (to) {
     return (
-      <StyledRouterLink to={to} onClick={() => window.scrollTo(0, 0)} {...props}>
+      <StyledRouterLink to={to} {...props}>
         {children}
       </StyledRouterLink>
     );
