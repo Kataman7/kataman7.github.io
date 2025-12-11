@@ -408,7 +408,28 @@ Niveau : L3*/
         fr: "Clone de Gravatar développé en équipe avec Symfony et Twig. Responsable du panneau d'administration permettant la gestion et modération des utilisateurs, avec système de rôles sécurisé, contrôleurs dédiés et interface Twig intuitive pour les administrateurs.",
         en: "Gravatar clone developed as a team using Symfony and Twig. Responsible for admin panel enabling user management and moderation, featuring secure role system, dedicated controllers, and intuitive Twig interface for administrators."
       }
+    },
+    picodeon: {
+      title: {
+        fr: "PicoDeon - Contrôleur MIDI Custom",
+        en: "PicoDeon - Custom MIDI Controller"
+      },
+      description: {
+        fr: "Contrôleur MIDI compact inspiré de l'accordéon chromatique, conçu de A à Z avec KiCad (PCB multi-couches, RP2040). Développement du firmware QMK en C/C++ pour traitement MIDI temps réel. Gestion complète du cycle de production : fabrication industrielle, assemblage manuel, commercialisation et maintenance open-source. Produit vendu et utilisé dans des projets musicaux au conservatoire.",
+        en: "Compact MIDI controller inspired by chromatic accordion, designed from scratch with KiCad (multi-layer PCB, RP2040). QMK firmware development in C/C++ for real-time MIDI processing. Complete production cycle management: industrial manufacturing, manual assembly, commercialization, and open-source maintenance. Product sold and used in musical projects at the conservatory."
+      }
+    },
+    picokey: {
+      title: {
+        fr: "Picokey - Mini Clavier MIDI",
+        en: "Picokey - Mini MIDI Keyboard"
+      },
+      description: {
+        fr: "Mini contrôleur MIDI de 12 touches conçu de A à Z avec KiCad (PCB multi-couches, RP2040). Développement du firmware QMK en C/C++ pour traitement MIDI temps réel. Gestion complète du cycle de production : fabrication industrielle, assemblage manuel et commercialisation. Format compact idéal pour la production musicale nomade et l'apprentissage.",
+        en: "12-key mini MIDI controller designed from scratch with KiCad (multi-layer PCB, RP2040). QMK firmware development in C/C++ for real-time MIDI processing. Complete production cycle management: industrial manufacturing, manual assembly, and commercialization. Compact format ideal for mobile music production and learning."
+      }
     }
+
   },
 
   // Hobbies section
@@ -566,6 +587,96 @@ Niveau : L3*/
       takeaways: {
         fr: "Ce projet fut une plongée profonde dans les pratiques de refactoring professionnel. Il a renforcé mes compétences en qualité de code, sécurité, modélisation de base de données, conception d'API, découplage frontend/backend et déploiement de projet full-stack via la conteneurisation.",
         en: "This project was a deep dive into professional refactoring practices. It reinforced my skills in code quality, security, database modeling, API design, frontend/backend decoupling, and full-stack project deployment through containerization."
+      }
+    },
+
+    picokey: {
+      title: {
+        fr: "Picokey – Mini Contrôleur MIDI Piano de 12 Touches",
+        en: "Picokey – 12-Key Mini Piano MIDI Controller"
+      },
+      intro: {
+        fr: "Un mini contrôleur MIDI compact de 12 touches conçu de A à Z, du schéma PCB à la production industrielle. Format piano traditionnel pour une prise en main immédiate et intuitive. Basé sur un RP2040 et programmé avec QMK, il a été fabriqué en série et commercialisé avec succès. Idéal pour la production musicale nomade, l'apprentissage et les performances live en format ultra-portable.",
+        en: "A compact 12-key mini MIDI controller designed from scratch, from PCB schematics to industrial production. Traditional piano format for immediate and intuitive use. Based on RP2040 and programmed with QMK, it was mass-produced and successfully commercialized. Ideal for mobile music production, learning, and live performances in ultra-portable format."
+      },
+      context: {
+        fr: "Le projet visait à créer un contrôleur MIDI compact et abordable destiné à la vente, combinant conception matérielle, fabrication industrielle et développement firmware. Le Picokey devait être portable, compatible avec tous les systèmes MIDI standard, et offrir une disposition piano classique pour une accessibilité maximale.",
+        en: "The project aimed to create a compact and affordable MIDI controller for commercial sale, combining hardware design, industrial manufacturing, and firmware development. The Picokey needed to be portable, compatible with all standard MIDI systems, and offer a classic piano layout for maximum accessibility."
+      },
+      role: {
+        fr: "J'ai conceptualisé entièrement le produit, conçu le PCB sur KiCad avec tous les schémas électroniques et routage, sélectionné les composants (RP2040, switches mécaniques, hot-swap sockets), développé le firmware QMK pour la gestion MIDI, coordonné la fabrication en usine, assemblé les unités à la main, et assuré la commercialisation avec site web, packaging et support client. J'ai également maintenu le projet open-source sur GitHub.",
+        en: "I fully conceptualized the product, designed the PCB on KiCad with all electronic schematics and routing, selected components (RP2040, mechanical switches, hot-swap sockets), developed the QMK firmware for MIDI handling, coordinated factory manufacturing, hand-assembled units, and managed commercialization with website, packaging, and customer support. I also maintained the open-source project on GitHub."
+      },
+      technologies: {
+        fr: "KiCad (conception PCB), RP2040 (microcontrôleur), QMK (firmware), C/C++, USB-C, MIDI, switches hot-swap MX, GitHub, production industrielle PCB.",
+        en: "KiCad (PCB design), RP2040 (microcontroller), QMK (firmware), C/C++, USB-C, MIDI, hot-swap MX switches, GitHub, industrial PCB manufacturing."
+      },
+      skills: {
+        fr: [
+          "Conçu un produit électronique compact de bout en bout, de la conception schématique à la production industrielle (AC1, AC3).",
+          "Développé un PCB professionnel multi-couches sur KiCad avec routage optimisé pour format miniature (AC1, AC2).",
+          "Programmé un firmware embarqué avec QMK en C/C++ pour le traitement MIDI temps réel sur RP2040 (AC4, CE1.06).",
+          "Géré la chaîne de production complète : sélection des composants, coordination avec l'usine, assemblage manuel et contrôle qualité (AC3).",
+          "Commercialisé le produit avec site web, documentation utilisateur, packaging et support client (AC2, AC4).",
+          "Maintenu un projet open-source avec mises à jour firmware et documentation technique sur GitHub (AC3, AC4)."
+        ],
+        en: [
+          "Designed a compact electronic product end-to-end, from schematic design to industrial production (AC1, AC3).",
+          "Developed a professional multi-layer PCB on KiCad with optimized routing for miniature format (AC1, AC2).",
+          "Programmed embedded firmware with QMK in C/C++ for real-time MIDI processing on RP2040 (AC4, CE1.06).",
+          "Managed the complete production chain: component selection, factory coordination, manual assembly, and quality control (AC3).",
+          "Commercialized the product with website, user documentation, packaging, and customer support (AC2, AC4).",
+          "Maintained an open-source project with firmware updates and technical documentation on GitHub (AC3, AC4)."
+        ]
+      },
+      takeaways: {
+        fr: "Ce projet m'a permis d'appliquer mon expérience en conception hardware sur un format ultra-compact, avec des contraintes d'optimisation d'espace et d'ergonomie spécifiques. Il a démontré ma capacité à adapter une approche produit complète à différents facteurs de forme et segments de marché, tout en maintenant la qualité et la viabilité commerciale.",
+        en: "This project allowed me to apply my hardware design experience to an ultra-compact format, with specific space optimization and ergonomic constraints. It demonstrated my ability to adapt a complete product approach to different form factors and market segments, while maintaining quality and commercial viability."
+      }
+    },
+
+    picodeon: {
+      title: {
+        fr: "PicoDeon – Contrôleur MIDI Custom Inspiré de l'Accordéon Chromatique",
+        en: "PicoDeon – Custom MIDI Controller Inspired by Chromatic Accordion"
+      },
+      intro: {
+        fr: "Un contrôleur MIDI compact et silencieux conçu de A à Z, du schéma PCB à la production industrielle. Inspiré des claviers d'accordéon chromatique, le PicoDeon offre une disposition en colonnes pour une expérience de jeu fluide et expressive. Basé sur un RP2040 et programmé avec QMK, il a été fabriqué en série, commercialisé avec succès et même utilisé dans des projets musicaux au conservatoire.",
+        en: "A compact and silent MIDI controller designed from scratch, from PCB schematics to industrial production. Inspired by chromatic accordion keyboards, the PicoDeon features a column layout for a fluid and expressive playing experience. Based on RP2040 and programmed with QMK, it was mass-produced, successfully commercialized, and even used in musical projects at the conservatory."
+      },
+      context: {
+        fr: "Le projet visait à créer un instrument MIDI professionnel destiné à la vente, alliant conception matérielle, fabrication industrielle et développement firmware. Le PicoDeon devait être robuste, personnalisable et compatible avec tous les systèmes MIDI standard, tout en offrant une ergonomie unique inspirée des instruments à vent chromatiques.",
+        en: "The project aimed to create a professional MIDI instrument for commercial sale, combining hardware design, industrial manufacturing, and firmware development. The PicoDeon needed to be robust, customizable, and compatible with all standard MIDI systems, while offering unique ergonomics inspired by chromatic wind instruments."
+      },
+      role: {
+        fr: "J'ai conceptualisé entièrement le produit, conçu le PCB sur KiCad avec tous les schémas électroniques et routage, sélectionné les composants (RP2040, switches Outemu White Silent, hot-swap sockets), développé le firmware QMK pour la gestion MIDI, coordonné la fabrication en usine, assemblé les unités à la main, et assuré la commercialisation avec site web, packaging et support client. J'ai également maintenu le projet open-source sur GitHub avec mises à jour firmware régulières.",
+        en: "I fully conceptualized the product, designed the PCB on KiCad with all electronic schematics and routing, selected components (RP2040, Outemu White Silent switches, hot-swap sockets), developed the QMK firmware for MIDI handling, coordinated factory manufacturing, hand-assembled units, and managed commercialization with website, packaging, and customer support. I also maintained the open-source project on GitHub with regular firmware updates."
+      },
+      technologies: {
+        fr: "KiCad (conception PCB), RP2040 (microcontrôleur), QMK (firmware), C/C++, USB-C, MIDI, switches hot-swap MX, GitHub, production industrielle PCB.",
+        en: "KiCad (PCB design), RP2040 (microcontroller), QMK (firmware), C/C++, USB-C, MIDI, hot-swap MX switches, GitHub, industrial PCB manufacturing."
+      },
+      skills: {
+        fr: [
+          "Conçu un produit électronique complet de bout en bout, de la conception schématique à la production industrielle (AC1, AC3).",
+          "Développé un PCB professionnel multi-couches sur KiCad avec routage optimisé et gestion de contraintes électriques (AC1, AC2).",
+          "Programmé un firmware embarqué avec QMK en C/C++ pour le traitement MIDI temps réel sur RP2040 (AC4, CE1.06).",
+          "Géré la chaîne de production complète : sélection des composants, coordination avec l'usine, assemblage manuel et contrôle qualité (AC3).",
+          "Commercialisé le produit avec site web, documentation utilisateur, packaging et support client (AC2, AC4).",
+          "Maintenu un projet open-source évolutif avec mises à jour firmware et gestion de communauté sur GitHub (AC3, AC4)."
+        ],
+        en: [
+          "Designed a complete electronic product end-to-end, from schematic design to industrial production (AC1, AC3).",
+          "Developed a professional multi-layer PCB on KiCad with optimized routing and electrical constraint management (AC1, AC2).",
+          "Programmed embedded firmware with QMK in C/C++ for real-time MIDI processing on RP2040 (AC4, CE1.06).",
+          "Managed the complete production chain: component selection, factory coordination, manual assembly, and quality control (AC3).",
+          "Commercialized the product with website, user documentation, packaging, and customer support (AC2, AC4).",
+          "Maintained an evolving open-source project with firmware updates and community management on GitHub (AC3, AC4)."
+        ]
+      },
+      takeaways: {
+        fr: "Ce projet m'a permis d'acquérir une expérience complète du cycle de vie d'un produit électronique, de la conception à la commercialisation. Il a renforcé mes compétences en conception hardware, développement embarqué, gestion de production et entrepreneuriat technique. Voir le PicoDeon utilisé dans des projets musicaux au conservatoire a été particulièrement gratifiant.",
+        en: "This project gave me comprehensive experience in the complete lifecycle of an electronic product, from design to commercialization. It strengthened my skills in hardware design, embedded development, production management, and technical entrepreneurship. Seeing the PicoDeon used in musical projects at the conservatory was particularly rewarding."
       }
     },
 

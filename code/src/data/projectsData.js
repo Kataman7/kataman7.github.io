@@ -109,4 +109,38 @@ export const projectsData = {
     mediaSrc: '../../resources/images/train.png',
     mediaAlt: 'Board Game Screenshot'
   },
+  'picodeon': {
+    id: 'picodeon',
+    startDate: 'Sept 2024',
+    endDate: 'Dec 2024',
+    titleKey: 'projects.picodeon.title',
+    descriptionKey: 'projects.picodeon.description',
+    detailsKey: 'projectDetails.picodeon',
+   mediaType: 'images',
+    mediaSrcs: [
+      '../../resources/images/pcb_schematic.png',
+      '../../resources/images/pcb.png',
+      '../../resources/images/top_plate.png',
+      '../../resources/images/bottom_plate.png',
+      '../../resources/images/picodeon_assembled.png'
+    ],
+    mediaAlts: [
+      'Picodeon Schematic Diagram',
+      'Picodeon PCB',
+      'Top Plate Design',
+      'Bottom Plate Design',
+      'Assembled Picodeon'
+    ]
+  },
+  'picokey': {
+    id: 'picokey',
+    startDate: 'Sept 2024',
+    endDate: 'Nov 2024',
+    titleKey: 'projects.picokey.title',
+    descriptionKey: 'projects.picokey.description',
+    detailsKey: 'projectDetails.picokey',
+    mediaType: 'image',
+    mediaSrc: '../../resources/images/picokey.png',
+    mediaAlt: 'Picokey MIDI Controller'
+  },
 };
