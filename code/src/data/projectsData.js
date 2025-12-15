@@ -7,7 +7,7 @@ export const projectsData = {
     descriptionKey: 'projects.skullRoulette.description',
     detailsKey: 'projectDetails.skullRoulette',
     mediaType: 'image',
-    mediaSrc: '../../resources/images/skullroulette_ingame.gif',
+    mediaSrc: '/resources/images/skullroulette_ingame.gif',
     mediaAlt: 'Skull Roulette game in progress'
   },
   'trello-ia': {
@@ -18,12 +18,12 @@ export const projectsData = {
     titleKey: 'projects.trelloAI.title',
     descriptionKey: 'projects.trelloAI.description',
     detailsKey: 'projectDetails.trelloAI',
-    mediaType: 'image',
-    mediaSrc: [
-      '../../resources/images/trelloIAchat.png',
-      '../../resources/images/trelloIAgenerator.png'
+    mediaType: 'images',
+    mediaSrcs: [
+      '/resources/images/trelloIAchat.png',
+      '/resources/images/trelloIAgenerator.png'
     ],
-    mediaAlt: [
+    mediaAlts: [
       'Trello IA Chat Interface',
       'Trello IA Content Generator'
     ]
@@ -46,7 +46,7 @@ export const projectsData = {
     descriptionKey: 'projects.myAvatar.description',
     detailsKey: 'projectDetails.myAvatar',
     mediaType: 'image',
-    mediaSrc: '../../resources/images/my-avatar.png',
+    mediaSrc: '/resources/images/my-avatar.png',
     mediaAlt: 'My Avatar Main Interface'
   },
   'very-bad-split': {
@@ -58,7 +58,7 @@ export const projectsData = {
     descriptionKey: 'projects.veryBadSplit.description',
     detailsKey: 'projectDetails.veryBadSplit',
     mediaType: 'image',
-    mediaSrc: '../../resources/images/verybadsplit_interface.png',
+    mediaSrc: '/resources/images/verybadsplit_interface.png',
     mediaAlt: 'Very Bad Split Main Interface'
   },
   'skull': {
@@ -70,7 +70,7 @@ export const projectsData = {
     descriptionKey: 'projects.skull.description',
     detailsKey: 'projectDetails.skull',
     mediaType: 'image',
-    mediaSrc: '../../resources/images/skull_ingame.png',
+    mediaSrc: '/resources/images/skull_ingame.png',
     mediaAlt: 'Skull game in progress'
   },
   'smile-web': {
@@ -83,8 +83,8 @@ export const projectsData = {
     detailsKey: 'projectDetails.smileWeb',
     mediaType: 'images',
     mediaSrcs: [
-      '../../resources/images/smileweb_interface.png',
-      '../../resources/images/smileweb_collision.png'
+      '/resources/images/smileweb_interface.png',
+      '/resources/images/smileweb_collision.png'
     ],
     mediaAlts: [
       'Smile.Web Interface Screenshot',
@@ -111,7 +111,7 @@ export const projectsData = {
     descriptionKey: 'projects.sae3a.description',
     detailsKey: 'projectDetails.sae3a',
     mediaType: 'image',
-    mediaSrc: '../../resources/images/capynote.png',
+    mediaSrc: '/resources/images/capynote.png',
     mediaAlt: 'Class diagram'
   },
   'terraria-like': {
@@ -123,7 +123,7 @@ export const projectsData = {
     descriptionKey: 'projects.terrariaLike.description',
     detailsKey: 'projectDetails.terrariaLike',
     mediaType: 'video',
-    mediaSrc: '../../resources/video/TerrariaLike.mp4'
+    mediaSrc: '/resources/video/TerrariaLike.mp4'
   },
   'sae-train': {
     id: 'sae-train',
@@ -134,7 +134,7 @@ export const projectsData = {
     descriptionKey: 'projects.saeTrain.description',
     detailsKey: 'projectDetails.saeTrain',
     mediaType: 'image',
-    mediaSrc: '../../resources/images/train.png',
+    mediaSrc: '/resources/images/train.png',
     mediaAlt: 'Board Game Screenshot'
   },
   'picodeon': {
@@ -147,11 +147,11 @@ export const projectsData = {
     detailsKey: 'projectDetails.picodeon',
     mediaType: 'images',
     mediaSrcs: [
-      '../../resources/images/pcb_schematic.png',
-      '../../resources/images/pcb.png',
-      '../../resources/images/top_plate.png',
-      '../../resources/images/bottom_plate.png',
-      '../../resources/images/picodeon_assembled.png'
+      '/resources/images/pcb_schematic.png',
+      '/resources/images/pcb.png',
+      '/resources/images/top_plate.png',
+      '/resources/images/bottom_plate.png',
+      '/resources/images/picodeon_assembled.png'
     ],
     mediaAlts: [
       'Picodeon Schematic Diagram',
@@ -170,7 +170,7 @@ export const projectsData = {
     descriptionKey: 'projects.picokey.description',
     detailsKey: 'projectDetails.picokey',
     mediaType: 'image',
-    mediaSrc: '../../resources/images/picokey.png',
+    mediaSrc: '/resources/images/picokey.png',
     mediaAlt: 'Picokey MIDI Controller'
   },
 };
