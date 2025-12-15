@@ -7,6 +7,8 @@ import { projectsData } from '../../data/projectsData';
 import { useTranslation } from '../../i18n/LanguageContext';
 import styled from 'styled-components';
 import AtmSimpleLink from '../atoms/AtmSimpleLink';
+import { useState } from 'react';
+import MolProjectFilter from '../molecules/MolProjectFilter';
 
 const ProjectsContainer = styled.div`
   width: 100%;
@@ -29,13 +31,24 @@ const DateRange = styled.div`
 
 const OrgProjectsList = () => {
   const { t } = useTranslation();
+  const [selectedType, setSelectedType] = useState('all');
 
   // Get projects from central data file keyed by slug
   const projects = Object.values(projectsData);
 
+  const filtered = projects.filter(p => {
+    if (!selectedType || selectedType === 'all') return true;
+    return Array.isArray(p.types) ? p.types.includes(selectedType) : (p.type === selectedType);
+  });
+
   return (
     <ProjectsContainer>
-      {projects.map((project, index) => (
+      <MolTwoColumn
+        left={<div />}
+        right={<MolProjectFilter value={selectedType} onChange={setSelectedType} />}
+      />
+
+      {filtered.map((project, index) => (
         <div key={index} id={project.id}>
           <MolTwoColumn
           left={
@@ -58,6 +71,9 @@ const OrgProjectsList = () => {
                 </AtmSimpleLink>
               </AtmHeading>
               <AtmText>{t(project.descriptionKey)}</AtmText>
+              {project.types && (
+                <AtmText>{project.types.map(type => t(`projectTypes.${type}`)).join(', ')}</AtmText>
+              )}
             </>
           }
         />

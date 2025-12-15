@@ -442,6 +442,42 @@ Niveau : L3*/
 
   },
 
+  // Project types (used for filtering)
+  projectTypes: {
+    title: {
+      fr: "Type",
+      en: "Type"
+    },
+    all: {
+      fr: "Tous",
+      en: "All"
+    },
+    web: {
+      fr: "Web",
+      en: "Web"
+    },
+    game: {
+      fr: "Jeu",
+      en: "Game"
+    },
+    ai: {
+      fr: "IA",
+      en: "AI"
+    },
+    hardware: {
+      fr: "Matériel",
+      en: "Hardware"
+    },
+    video: {
+      fr: "Vidéo",
+      en: "Video"
+    },
+    other: {
+      fr: "Autre",
+      en: "Other"
+    }
+  },
+
   // Hobbies section
   hobbies: {
     title: {
