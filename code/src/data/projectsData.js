@@ -1,13 +1,24 @@
 export const projectsData = {
   'skull-roulette': {
     id: 'skull-roulette',
-    startDate: 'Jan 2026',
+    startDate: 'Nov 2025',
     titleKey: 'projects.skullRoulette.title',
     descriptionKey: 'projects.skullRoulette.description',
     detailsKey: 'projectDetails.skullRoulette',
     mediaType: 'image',
     mediaSrc: '../../resources/images/skullroulette_ingame.gif',
     mediaAlt: 'Skull Roulette game in progress'
+  },
+  'trello-ia': {
+    id: 'trello-ia',
+    startDate: 'Dec 2025',
+    endDate: 'Dec 2025',
+    titleKey: 'projects.trelloAI.title',
+    descriptionKey: 'projects.trelloAI.description',
+    detailsKey: 'projectDetails.trelloAI',
+    mediaType: 'image',
+    mediaSrc: '',
+    mediaAlt: ''
   },
   "capybara-bot": {
     id: "capybara-bot",
@@ -116,7 +127,7 @@ export const projectsData = {
     titleKey: 'projects.picodeon.title',
     descriptionKey: 'projects.picodeon.description',
     detailsKey: 'projectDetails.picodeon',
-   mediaType: 'images',
+    mediaType: 'images',
     mediaSrcs: [
       '../../resources/images/pcb_schematic.png',
       '../../resources/images/pcb.png',

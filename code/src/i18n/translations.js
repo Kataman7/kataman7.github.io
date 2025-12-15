@@ -309,6 +309,16 @@ Niveau : L3*/
       fr: "Voir le projet",
       en: "View Project"
     },
+    trelloAI: {
+      title: {
+        fr: "TrelloAI - SaaS d'Automatisation Trello",
+        en: "TrelloAI - Trello Automation SaaS"
+      },
+      description: {
+        fr: "Application SaaS full-stack d'automatisation Trello via agent LLM. Frontend React/Tailwind, backend Express/Node.js, intégration OpenAI API. L'agent analyse les boards, répond aux questions, crée et modifie cartes et listes, génère des boards complets, assigne automatiquement les tâches et évalue leur difficulté. Architecture REST sécurisée orchestrant APIs multiples (OpenAI, Trello).",
+        en: "Full-stack SaaS application for Trello automation via LLM agent. React/Tailwind frontend, Express/Node.js backend, OpenAI API integration. Agent analyzes boards, answers questions, creates and modifies cards and lists, generates complete boards, automatically assigns tasks, and evaluates their difficulty. Secure REST architecture orchestrating multiple APIs (OpenAI, Trello)."
+      }
+    },
     veryBadSplit: {
       title: {
         fr: "SAE – Very Bad Split: Application Web de Gestion Financière d'Événements",
@@ -677,6 +687,51 @@ Niveau : L3*/
       takeaways: {
         fr: "Ce projet m'a permis d'acquérir une expérience complète du cycle de vie d'un produit électronique, de la conception à la commercialisation. Il a renforcé mes compétences en conception hardware, développement embarqué, gestion de production et entrepreneuriat technique. Voir le PicoDeon utilisé dans des projets musicaux au conservatoire a été particulièrement gratifiant.",
         en: "This project gave me comprehensive experience in the complete lifecycle of an electronic product, from design to commercialization. It strengthened my skills in hardware design, embedded development, production management, and technical entrepreneurship. Seeing the PicoDeon used in musical projects at the conservatory was particularly rewarding."
+      }
+    },
+
+    trelloAI: {
+      title: {
+        fr: "TrelloAI – SaaS d'Automatisation Trello par Agent LLM",
+        en: "TrelloAI – Trello Automation SaaS with LLM Agent"
+      },
+      intro: {
+        fr: "Une application SaaS full-stack permettant d'automatiser la gestion de projets Trello via un agent LLM intelligent. Développée avec React et Tailwind pour le frontend, Express pour le backend, et l'API OpenAI pour les capacités d'intelligence artificielle. L'agent peut analyser les boards, répondre aux questions, créer et modifier des cartes et listes, générer des boards complets, assigner automatiquement des tâches et évaluer leur difficulté. Une solution complète pour optimiser la gestion de projets avec l'IA.",
+        en: "A full-stack SaaS application enabling Trello project management automation through an intelligent LLM agent. Built with React and Tailwind for the frontend, Express for the backend, and OpenAI API for artificial intelligence capabilities. The agent can analyze boards, answer questions, create and modify cards and lists, generate complete boards, automatically assign tasks, and evaluate their difficulty. A comprehensive solution for optimizing project management with AI."
+      },
+      context: {
+        fr: "Le projet visait à créer un outil d'automatisation intelligente pour Trello, répondant aux besoins des équipes de gérer efficacement leurs projets sans intervention manuelle répétitive. L'enjeu était de concevoir une architecture robuste permettant à un agent LLM d'interagir de manière fiable avec l'API Trello tout en offrant une interface utilisateur intuitive et réactive.",
+        en: "The project aimed to create an intelligent automation tool for Trello, addressing teams' needs to efficiently manage their projects without repetitive manual intervention. The challenge was to design a robust architecture enabling an LLM agent to reliably interact with the Trello API while providing an intuitive and responsive user interface."
+      },
+      role: {
+        fr: "J'ai conçu et développé l'architecture complète du SaaS : frontend React avec Tailwind pour l'interface utilisateur, backend Express pour la gestion des requêtes et l'orchestration, et intégration de l'API OpenAI pour les capacités d'agent LLM. J'ai implémenté la logique d'automatisation permettant l'analyse de boards, la génération de contenu, la modification de cartes et listes, le système d'assignation automatique et l'évaluation de difficulté des tâches. J'ai également géré l'intégration avec l'API Trello et la sécurisation des endpoints.",
+        en: "I designed and developed the complete SaaS architecture: React frontend with Tailwind for the user interface, Express backend for request handling and orchestration, and OpenAI API integration for LLM agent capabilities. I implemented the automation logic enabling board analysis, content generation, card and list modification, automatic assignment system, and task difficulty evaluation. I also managed Trello API integration and endpoint security."
+      },
+      technologies: {
+        fr: "React, Tailwind CSS, Express.js, Node.js, OpenAI API, API Trello, REST API, JavaScript/TypeScript, authentification JWT.",
+        en: "React, Tailwind CSS, Express.js, Node.js, OpenAI API, Trello API, REST API, JavaScript/TypeScript, JWT authentication."
+      },
+      skills: {
+        fr: [
+          "Développé une application SaaS full-stack avec architecture frontend/backend découplée (AC2, AC4).",
+          "Intégré l'API OpenAI pour créer un agent LLM capable d'orchestrer des actions complexes sur Trello (AC3, AC4).",
+          "Conçu et implémenté une API REST sécurisée avec Express pour la communication frontend/backend (AC3, CE1.06).",
+          "Créé une interface utilisateur moderne et réactive avec React et Tailwind CSS (AC2, AC4).",
+          "Développé la logique métier complexe : analyse de boards, génération de contenu, assignation automatique et évaluation de difficulté (AC1, AC3).",
+          "Intégré et orchestré plusieurs APIs tierces (OpenAI, Trello) avec gestion d'erreurs robuste (AC3, AC4)."
+        ],
+        en: [
+          "Developed a full-stack SaaS application with decoupled frontend/backend architecture (AC2, AC4).",
+          "Integrated OpenAI API to create an LLM agent capable of orchestrating complex actions on Trello (AC3, AC4).",
+          "Designed and implemented a secure REST API with Express for frontend/backend communication (AC3, CE1.06).",
+          "Created a modern and responsive user interface with React and Tailwind CSS (AC2, AC4).",
+          "Developed complex business logic: board analysis, content generation, automatic assignment, and difficulty evaluation (AC1, AC3).",
+          "Integrated and orchestrated multiple third-party APIs (OpenAI, Trello) with robust error handling (AC3, AC4)."
+        ]
+      },
+      takeaways: {
+        fr: "Ce projet m'a permis de maîtriser l'intégration d'agents LLM dans des applications réelles, en combinant intelligence artificielle et automatisation de processus métier. Il a renforcé mes compétences en architecture SaaS, orchestration d'APIs multiples et développement d'interfaces intelligentes. La complexité de faire interagir un agent LLM de manière fiable avec des APIs externes a été un défi technique enrichissant.",
+        en: "This project enabled me to master the integration of LLM agents into real applications, combining artificial intelligence and business process automation. It strengthened my skills in SaaS architecture, multi-API orchestration, and intelligent interface development. The complexity of making an LLM agent reliably interact with external APIs was an enriching technical challenge."
       }
     },
 
