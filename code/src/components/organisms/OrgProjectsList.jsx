@@ -71,9 +71,6 @@ const OrgProjectsList = () => {
                 </AtmSimpleLink>
               </AtmHeading>
               <AtmText>{t(project.descriptionKey)}</AtmText>
-              {project.types && (
-                <AtmText>{project.types.map(type => t(`projectTypes.${type}`)).join(', ')}</AtmText>
-              )}
             </>
           }
         />
