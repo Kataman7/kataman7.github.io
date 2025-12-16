@@ -30,6 +30,10 @@ const AppContainer = styled.div`
   
   font-family: ${props => props.theme.fontFamily};
   overflow-x: hidden;
+  /* Hide the content until fonts and initial data are ready to avoid a flash where
+     the loader disappears but the page isn't mounted yet. */
+  visibility: ${props => props.$contentReady ? 'visible' : 'hidden'};
+  pointer-events: ${props => props.$contentReady ? 'auto' : 'none'};
 `;
 
 const AppContent = () => {
@@ -70,15 +74,13 @@ const AppContent = () => {
   return (
     <>
       <GlobalStyles />
-      {contentReady && (
-        <BrowserRouter>
-          <AppContainer $noTransition={isLoading || isInitialLoad}>
-            <OrgHeader titleKey="name" />
-            <AppRoutes />
-          </AppContainer>
-        </BrowserRouter>
-      )}
-      {(isInitialLoad || isLoading) && <AtmLoader isExiting={isInitialLoad ? isInitialExiting : isExiting} />}
+      <BrowserRouter>
+        <AppContainer $noTransition={isLoading || isInitialLoad} $contentReady={contentReady}>
+          <OrgHeader titleKey="name" />
+          <AppRoutes />
+        </AppContainer>
+      </BrowserRouter>
+      {(isInitialLoad || isLoading) && <AtmLoader $initial={isInitialLoad} isExiting={isInitialLoad ? isInitialExiting : isExiting} />}
     </>
   );
 };

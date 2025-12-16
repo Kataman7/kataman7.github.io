@@ -11,13 +11,7 @@ const FilterContainer = styled.div`
   margin-bottom: ${props => props.theme.spacing.large};
 `;
 
-const ActiveButton = styled(AtmButton)`
-  background-color: ${props => props.theme.colors.primary};
-  color: ${props => props.theme.colors.background};
-  border-color: ${props => props.theme.colors.primary};
-`;
-
-const TYPES = ['all', 'web', 'game', 'ai', 'hardware'];
+const TYPES = ['all', 'web', 'game', 'ai', 'hardware', 'other'];
 
 const MolProjectFilter = ({ value = 'all', onChange = () => {} }) => {
   const { t } = useTranslation();
@@ -36,12 +30,11 @@ const MolProjectFilter = ({ value = 'all', onChange = () => {} }) => {
     <FilterContainer>
       {TYPES.map(type => {
         const isActive = value === type;
-        const ButtonComp = isActive ? ActiveButton : AtmButton;
         const label = `${t(`projectTypes.${type}`)} (${counts[type] ?? 0})`;
         return (
-          <ButtonComp key={type} onClick={() => onChange(type)} aria-pressed={isActive}>
+          <AtmButton key={type} onClick={() => onChange(type)} aria-pressed={isActive}>
             {label}
-          </ButtonComp>
+          </AtmButton>
         );
       })}
     </FilterContainer>

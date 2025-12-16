@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 import { LOADING_DURATIONS } from '../../contexts/LoadingContext';
 
 const fadeIn = keyframes`
@@ -41,7 +41,14 @@ const LoaderOverlay = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  animation: ${props => props.$isExiting ? fadeOut : fadeIn} ${props => props.$isExiting ? LOADING_DURATIONS.fadeOut : LOADING_DURATIONS.fadeIn}ms ease-in-out;
+  /* If it's the initial loader (first page load) and not exiting, render fully opaque immediately to avoid a brief flash
+     when the app finishes mounting; when exiting, still play the fadeOut animation. */
+  ${props => props.$initial
+    ? (props.$isExiting
+      ? css`animation: ${fadeOut} ${LOADING_DURATIONS.fadeOut}ms ease-in-out;`
+      : css`animation: none; opacity: 1;`)
+    : css`animation: ${props.$isExiting ? fadeOut : fadeIn} ${props.$isExiting ? LOADING_DURATIONS.fadeOut : LOADING_DURATIONS.fadeIn}ms ease-in-out;`
+  }
 `;
 
 const ClockContainer = styled.div`
@@ -96,9 +103,9 @@ const FastHand = styled(ClockHand)`
   animation: ${rotateHand} 0.6s linear infinite;
 `;
 
-const AtmLoader = ({ isExiting = false }) => {
+const AtmLoader = ({ isExiting = false, $initial = false }) => {
   return (
-    <LoaderOverlay $isExiting={isExiting}>
+    <LoaderOverlay $initial={$initial} $isExiting={isExiting}>
       <ClockContainer>
         <ClockCircle />
         <SlowHand />

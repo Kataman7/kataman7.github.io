@@ -21,8 +21,21 @@ const buttonStyles = css`
 
   &:hover {
     box-shadow: ${props => props.theme.boxShadow.buttonHover};
-    transform: translate(4px, 4px);
+    transform: translate(3px, 3px);
     text-decoration: none;
+  }
+
+  &:active {
+    transform: translate(6px, 6px);
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.12);
+    transition: transform 0.18s cubic-bezier(.2,.8,.2,1), box-shadow 0.18s ease;
+  }
+
+  /* allow persistent pressed state when using aria-pressed */
+  &[aria-pressed="true"] {
+    transform: translate(4px, 4px);
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.10);
+    transition: transform 0.18s cubic-bezier(.2,.8,.2,1), box-shadow 0.18s ease;
   }
 
   img {
