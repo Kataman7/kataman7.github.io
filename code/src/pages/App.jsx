@@ -28,6 +28,11 @@ const AppContainer = styled.div`
     padding: ${props => props.theme.spacing.large} 28vw ${props => props.theme.spacing.large} 28vw;
   }
   
+  /* Ajouter une marge en haut sur desktop et tablette (pas sur téléphone) */
+  @media (min-width: 769px) {
+    margin-top: ${props => props.theme.spacing.xl};
+  }
+  
   font-family: ${props => props.theme.fontFamily};
   overflow-x: hidden;
   /* Hide the content until fonts and initial data are ready to avoid a flash where

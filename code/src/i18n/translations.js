@@ -56,8 +56,8 @@ export const translations = {
       en: "About me"
     },
     content: {
-      fr: "Passionné par le développement logiciel, je conçois des logiciels, des jeux vidéo et des sites web. Je dirige également une micro-entreprise spécialisée dans la conception et la vente de claviers personnalisés, ce qui reflète mon esprit d'entreprise et ma passion pour la technologie. J'aime les défis qui me permettent d'enrichir mes compétences et de participer à des projets innovants.",
-      en: "Passionate about software development, I design software, video games and websites. I also run a micro-business specialising in the design and sale of customised keyboards, which reflects my entrepreneurial spirit and passion for technology. I enjoy challenges that allow me to enrich my skills and take part in innovative projects."
+      fr: "Passionné par le développement logiciel, je conçois des applications, des jeux vidéo et des sites web. Je dirige également une micro-entreprise spécialisée dans la conception et la vente de claviers personnalisés. J'aime continuellement enrichir mes compétences et m'investir dans des projets créatifs et innovants.",
+      en: "Passionate about software development, I design applications, video games and websites. I also run a micro-business specialising in the design and sale of customised keyboards. I enjoy continuously enriching my skills and investing myself in creative and innovative projects."
     }
   },
 
@@ -81,12 +81,6 @@ export const translations = {
         en: "2023-2026"
       }
     },
-    /*Logo de IAE Montpellier
-IAE Montpellier
-IAE Montpellier
-Licentiate degree, Management Technologies et SciencesLicentiate degree, Management Technologies et Sciences
-sept. 2025 - août 2026sept. 2025 - août 2026
-Niveau : L3*/
     bac: {
       title: {
         fr: "IAE Montpellier",
@@ -110,8 +104,8 @@ Niveau : L3*/
       en: "Expertise"
     },
     content1: {
-      fr: "Je me spécialise dans la conception et le développement d'applications web, de jeux vidéo et d'interfaces utilisateur, ainsi que dans la conception et la gestion de bases de données. J'ai de l'expérience dans l'administration de systèmes de communication informatiques complexes, garantissant des infrastructures fiables et efficaces.",
-      en: "I specialise in the design and development of web applications, video games and user interfaces, as well as the design and management of databases. I am experienced in the administration of complex IT communication systems, ensuring reliable and efficient infrastructures."
+      fr: "Je développe des applications web, des jeux vidéo et je crée des interfaces graphiques intuitives. Je conçois également des bases de données optimisées et j'administre des infrastructures réseau pour garantir des systèmes fiables et performants.",
+      en: "I develop web applications, video games and create intuitive graphical interfaces. I also design optimised databases and administer network infrastructures to ensure reliable and high-performance systems."
     },
     content2: {
       fr: "J'ai également une expertise dans la conception et l'assemblage de claviers personnalisés, ainsi que dans la construction d'ordinateurs. Je suis aussi passionné par la composition musicale.",
