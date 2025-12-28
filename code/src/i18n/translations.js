@@ -38,6 +38,10 @@ export const translations = {
     skills: {
       fr: "Compétences",
       en: "Skills"
+    },
+    recruiterOnly: {
+      fr: "Mode recruteur requis",
+      en: "Recruiter mode required"
     }
   },
 
@@ -864,8 +868,8 @@ export const translations = {
         en: "A fun and challenging 2D game developed during the Code Game Jam 2025 using Lua and Pico-8, with strict performance constraints and a limited color palette. The game features a character who uses TNT to collect resources and defeat waves of monsters, all coded from scratch in just 24 hours."
       },
       context: {
-        fr: "Ce projet a été développé en solo pendant le Code Game Jam 2025. L'objectif était de créer un jeu engageant et amusant dans les contraintes de la console fantaisie Pico-8, qui inclut une palette de couleurs limitée et des limitations de performance strictes.",
-        en: "This project was developed solo during the Code Game Jam 2025. The goal was to create an engaging and fun game within the constraints of the Pico-8 fantasy console, which includes a limited color palette and strict performance limitations."
+        fr: "Ce projet a été développé en duo pendant le Code Game Jam 2025. L'objectif était de créer un jeu engageant et amusant dans les contraintes de la console fantaisie Pico-8, qui inclut une palette de couleurs limitée et des limitations de performance strictes.",
+        en: "This project was developed as a duo during the Code Game Jam 2025. The goal was to create an engaging and fun game within the constraints of the Pico-8 fantasy console, which includes a limited color palette and strict performance limitations."
       },
       role: {
         fr: "J'ai conçu et implémenté l'intégralité du jeu en utilisant Lua dans l'environnement Pico-8. Cela incluait la création des mécaniques de jeu from scratch, telles que la gravité, les explosions de TNT et un algorithme de génération aléatoire de niveaux utilisant des automates cellulaires. Le jeu a été développé en utilisant des principes orientés objet pour assurer un code propre et efficace.",

@@ -14,15 +14,19 @@ import AtmQuote from '../components/atoms/AtmQuote';
 import OrgProjectsList from '../components/organisms/OrgProjectsList';
 import MolFooterClock from '../components/molecules/MolFooterClock';
 import OrgFooter from '../components/organisms/OrgFooter';
-import MolThemeToggle from '../components/molecules/MolThemeToggle';
+import AtmButton from '../components/atoms/AtmButton';
+import { useTheme } from '../styles/ThemeProvider';
 import AtmSimpleLink from '../components/atoms/AtmSimpleLink';
+import { useUserMode } from '../contexts/UserModeContext';
 
 const Main = styled.main`
   margin: auto;
 `;
 
 const PagHome = () => {
-  const { t } = useTranslation();
+  const { t, toggleLanguage, currentLanguage } = useTranslation();
+  const { isDark, toggleTheme } = useTheme();
+  const { isRecruiter } = useUserMode();
   const location = useLocation();
 
   useEffect(() => {
@@ -57,19 +61,29 @@ const PagHome = () => {
               <AtmButtonLink href="https://github.com/Kataman7" target="_blank">
                 {t('links.github')}
               </AtmButtonLink>
-              <AtmButtonLink href="https://www.linkedin.com/in/antonin-chabaud-pech" target="_blank">
+              <AtmButtonLink href={isRecruiter ? "https://www.linkedin.com/in/antonin-chabaud-pech" : "https://www.linkedin.com/"} target="_blank">
                 {t('links.linkedin')}
               </AtmButtonLink>
-              <AtmButtonLink href="resources/CV.pdf" target="_blank">
-                {t('links.cv')}
+              <AtmButtonLink 
+                href="resources/CV.pdf" 
+                target="_blank" 
+                $disabled={!isRecruiter}
+                title={!isRecruiter ? t('links.recruiterOnly') : ""}
+              >
+                {t('links.cv')} {!isRecruiter}
               </AtmButtonLink>
-              <AtmButtonLink href="mailto:antonin.chabaud-pech@etu.umontpellier.fr">
+              <AtmButtonLink href="mailto:contact@antonin.net">
                 {t('links.email')}
               </AtmButtonLink>
               <AtmButtonLink to="/skills">
                 {t('links.skills')}
               </AtmButtonLink>
-              <MolThemeToggle />
+              <AtmButton onClick={toggleLanguage}>
+                {currentLanguage === 'fr' ? 'EN' : 'FR'}
+              </AtmButton>
+              <AtmButton onClick={toggleTheme}>
+                {isDark ? t('lightTheme') : t('darkTheme')}
+              </AtmButton>
             </MolNavBar>
           }
         />
@@ -186,8 +200,8 @@ const PagHome = () => {
             <>
               <AtmText>
                 {t('contact.intro')} <strong>
-                  <AtmSimpleLink href="mailto:antonin.chabaud-pech@etu.umontpellier.fr">
-                    antonin.chabaud-pech@etu.umontpellier.fr
+                  <AtmSimpleLink href="mailto:contact@antonin.net">
+                    contact@antonin.net
                   </AtmSimpleLink>
                 </strong>
               </AtmText>

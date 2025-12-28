@@ -5,6 +5,7 @@ import ThemeProviderWrapper from '../styles/ThemeProvider'
 import { GlobalStyles } from '../styles/globalStyles'
 import { LanguageProvider } from '../i18n/LanguageContext'
 import { LoadingProvider, useLoading, LOADING_DURATIONS } from '../contexts/LoadingContext'
+import { UserModeProvider } from '../contexts/UserModeContext'
 import AtmLoader from '../components/atoms/AtmLoader'
 import OrgHeader from '../components/organisms/OrgHeader'
 import AppRoutes from '../routes/routes'
@@ -93,11 +94,13 @@ const AppContent = () => {
 const App = () => {
   return (
     <LoadingProvider>
-      <ThemeProviderWrapper>
-        <LanguageProvider>
-          <AppContent />
-        </LanguageProvider>
-      </ThemeProviderWrapper>
+      <UserModeProvider>
+        <ThemeProviderWrapper>
+          <LanguageProvider>
+            <AppContent />
+          </LanguageProvider>
+        </ThemeProviderWrapper>
+      </UserModeProvider>
     </LoadingProvider>
   )
 }

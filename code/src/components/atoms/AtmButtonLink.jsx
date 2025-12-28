@@ -6,7 +6,7 @@ const buttonStyles = css`
   background-color: ${props => props.theme.colors.background};
   color: ${props => props.theme.colors.primary};
   border-radius: ${props => props.theme.borderRadius.normal};
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.22s cubic-bezier(.2,.8,.2,1), transform 0.22s cubic-bezier(.2,.8,.2,1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,6 +14,7 @@ const buttonStyles = css`
   border: ${props => props.theme.border.normal} solid ${props => props.theme.colors.primary};
   box-shadow: ${props => props.theme.boxShadow.button};
   font-family: ${props => props.theme.fontFamily};
+  font-size: ${props => props.theme.fontSize.small};
   text-decoration: none;
   cursor: pointer;
   overflow: hidden;
@@ -42,6 +43,21 @@ const buttonStyles = css`
     width: ${props => props.theme.spacing.xl};
     height: ${props => props.theme.spacing.xl};
   }
+
+  ${props => props.$disabled && css`
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+    filter: grayscale(0.8);
+    border-color: ${props => props.theme.colors.secondary || '#ccc'};
+    color: ${props => props.theme.colors.secondary || '#888'};
+    box-shadow: none;
+    
+    &:hover, &:active {
+      transform: none;
+      box-shadow: none;
+    }
+  `}
 `;
 
 const StyledLink = styled.a`
@@ -52,7 +68,16 @@ const StyledRouterLink = styled(Link)`
   ${buttonStyles}
 `;
 
-const AtmButtonLink = ({ children, to, href, ...props }) => {
+const AtmButtonLink = ({ children, to, href, $disabled, ...props }) => {
+  // If disabled, render as a span to prevent any navigation
+  if ($disabled) {
+    return (
+      <StyledLink as="span" $disabled={true} {...props}>
+        {children}
+      </StyledLink>
+    );
+  }
+
   // If 'to' is provided, use React Router Link (internal navigation)
   if (to) {
     return (

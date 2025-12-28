@@ -43,18 +43,33 @@ const StyledButton = styled.button`
     width: ${props => props.theme.spacing.xl};
     height: ${props => props.theme.spacing.xl};
   }
+
+  ${props => props.disabled && `
+    opacity: 0.6;
+    cursor: not-allowed;
+    filter: grayscale(0.8);
+    border-color: ${props.theme.colors.secondary || '#ccc'};
+    color: ${props.theme.colors.secondary || '#888'};
+    box-shadow: none;
+    pointer-events: none;
+    
+    &:hover, &:active {
+      transform: none;
+      box-shadow: none;
+    }
+  `}
 `;
 
-const AtmButton = ({ children, onClick, href, ...props }) => {
+const AtmButton = ({ children, onClick, href, disabled, ...props }) => {
   if (href) {
     return (
-      <StyledButton as="a" href={href} onClick={onClick} {...props}>
+      <StyledButton as="a" href={href} disabled={disabled} {...props}>
         {children}
       </StyledButton>
     );
   }
   return (
-    <StyledButton onClick={onClick} {...props}>
+    <StyledButton onClick={onClick} disabled={disabled} {...props}>
       {children}
     </StyledButton>
   );

@@ -1,11 +1,13 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { translations } from './translations';
 import { useLoading } from '../contexts/LoadingContext';
+import { useUserMode } from '../contexts/UserModeContext';
 
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
   const { withLoader } = useLoading();
+  const { isRecruiter } = useUserMode();
   const [currentLanguage, setCurrentLanguage] = useState(() => {
     try {
       const stored = localStorage.getItem('language');
@@ -37,26 +39,34 @@ export const LanguageProvider = ({ children }) => {
   };
 
   const t = (key) => {
-    const translation = getNestedValue(translations, key);
+    let translation = getNestedValue(translations, key);
     
     // Si la traduction n'existe pas, retourner la clé
     if (!translation) {
       return key;
     }
     
+    let result = key;
+
     // Si c'est un objet avec des tableaux par langue (comme skills)
     if (translation && typeof translation === 'object' && !Array.isArray(translation)) {
       // Si c'est un tableau dans la langue actuelle
       if (Array.isArray(translation[currentLanguage])) {
-        return translation[currentLanguage];
+        result = translation[currentLanguage];
       }
       // Si c'est une string dans la langue actuelle
-      if (typeof translation[currentLanguage] === 'string') {
-        return translation[currentLanguage];
+      else if (typeof translation[currentLanguage] === 'string') {
+        result = translation[currentLanguage];
       }
     }
+
+    // Censure du nom si on n'est pas en mode recruteur
+    if (key === 'name' && !isRecruiter) {
+      // "Antonin Chabaud-Pech" -> "Antonin C."
+      return result.split(' ').map((word, index) => index === 0 ? word : word[0] + '.').join(' ');
+    }
     
-    return key; // Fallback to key if translation not found
+    return result;
   };
 
   return (
