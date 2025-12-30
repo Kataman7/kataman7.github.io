@@ -61,7 +61,12 @@ const PagHome = () => {
               <AtmButtonLink href="https://github.com/Kataman7" target="_blank">
                 {t('links.github')}
               </AtmButtonLink>
-              <AtmButtonLink href={isRecruiter ? "https://www.linkedin.com/in/antonin-chabaud-pech" : "https://www.linkedin.com/"} target="_blank">
+              <AtmButtonLink 
+                href={isRecruiter ? "https://www.linkedin.com/in/antonin-chabaud-pech" : "https://www.linkedin.com/"} 
+                target="_blank"
+                $disabled={!isRecruiter}
+                title={!isRecruiter ? t('links.recruiterOnly') : ""}
+              >
                 {t('links.linkedin')}
               </AtmButtonLink>
               <AtmButtonLink 
@@ -70,7 +75,7 @@ const PagHome = () => {
                 $disabled={!isRecruiter}
                 title={!isRecruiter ? t('links.recruiterOnly') : ""}
               >
-                {t('links.cv')} {!isRecruiter}
+                {t('links.cv')}
               </AtmButtonLink>
               <AtmButtonLink href="mailto:contact@antonin.net">
                 {t('links.email')}
