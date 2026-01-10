@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useTheme } from '../../styles/ThemeProvider';
 
-const AtmEcoBadge = ({ width = '160px', alt = 'Ecoindex badge' }) => {
+const AtmEcoBadge = ({ alt = 'Ecoindex badge' }) => {
   const { isDark } = useTheme();
 
   useEffect(() => {
@@ -20,7 +20,6 @@ const AtmEcoBadge = ({ width = '160px', alt = 'Ecoindex badge' }) => {
       id="ecoindex-badge"
       data-theme={isDark ? 'dark' : 'light'}
       aria-label={alt}
-      style={{ width }}
     />
   );
 };
