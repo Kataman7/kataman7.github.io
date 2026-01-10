@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import MolSection from '../molecules/MolSection';
 import MolTwoColumn from '../molecules/MolTwoColumn';
-import MolFooterClock from '../molecules/MolFooterClock';
+import AtmEcoBadge from '../atoms/AtmEcoBadge';
 import AtmSignature from '../atoms/AtmSignature';
 
 const FooterContainer = styled.footer`
@@ -14,7 +14,7 @@ const OrgFooter = ({ timeTitle }) => {
     <FooterContainer>
       <MolSection>
         <MolTwoColumn
-          left={<MolFooterClock timeTitle={timeTitle} />}
+          left={<AtmEcoBadge width="160px" />}
           right={<AtmSignature width="160px" alt="Signature" />}
         />
       </MolSection>

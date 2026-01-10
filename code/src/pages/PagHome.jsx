@@ -43,8 +43,8 @@ const PagHome = () => {
     { nameKey: 'languages.csharp', progress: 88 },
     { nameKey: 'languages.python', progress: 60 },
     { nameKey: 'languages.java', progress: 96 },
-    { nameKey: 'languages.c', progress: 80 },
-    { nameKey: 'languages.sql', progress: 75 },
+    { nameKey: 'languages.c', progress: 75 },
+    { nameKey: 'languages.sql', progress: 80 },
     { nameKey: 'languages.javascript', progress: 90 },
     { nameKey: 'languages.php', progress: 80 },
     { nameKey: 'languages.lua', progress: 65 }
