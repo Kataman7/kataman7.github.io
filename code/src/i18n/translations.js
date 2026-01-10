@@ -128,8 +128,8 @@ export const translations = {
       en: "Technologies"
     },
     csharp: {
-      fr: "C# - Raylib",
-      en: "C# - Raylib"
+      fr: "C - C# - Raylib",
+      en: "C - C# - Raylib"
     },
     godot: {
       fr: "Godot - GDScript",
@@ -139,9 +139,9 @@ export const translations = {
       fr: "Java - JavaFX",
       en: "Java - JavaFX"
     },
-    c: {
-      fr: "C",
-      en: "C"
+    docker: {
+      fr: "Docker",
+      en: "Docker"
     },
     sql: {
       fr: "SQL - PLSQL - NoSQL",

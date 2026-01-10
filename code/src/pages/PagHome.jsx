@@ -40,14 +40,14 @@ const PagHome = () => {
 
   // Skills data for programming languages
   const programmingSkills = [
-    { nameKey: 'languages.csharp', progress: 88 },
+    { nameKey: 'languages.csharp', progress: 80 },
     { nameKey: 'languages.godot', progress: 70 },
     { nameKey: 'languages.java', progress: 96 },
-    { nameKey: 'languages.c', progress: 75 },
+    { nameKey: 'languages.docker', progress: 80 },
     { nameKey: 'languages.sql', progress: 80 },
     { nameKey: 'languages.javascript', progress: 90 },
     { nameKey: 'languages.php', progress: 80 },
-    { nameKey: 'languages.lua', progress: 65 }
+    { nameKey: 'languages.lua', progress: 70 }
   ];
 
   return (
