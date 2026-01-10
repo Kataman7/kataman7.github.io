@@ -41,7 +41,7 @@ const PagHome = () => {
   // Skills data for programming languages
   const programmingSkills = [
     { nameKey: 'languages.csharp', progress: 88 },
-    { nameKey: 'languages.python', progress: 60 },
+    { nameKey: 'languages.godot', progress: 70 },
     { nameKey: 'languages.java', progress: 96 },
     { nameKey: 'languages.c', progress: 75 },
     { nameKey: 'languages.sql', progress: 80 },

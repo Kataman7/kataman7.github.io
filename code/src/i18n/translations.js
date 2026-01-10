@@ -131,9 +131,9 @@ export const translations = {
       fr: "C# - Raylib",
       en: "C# - Raylib"
     },
-    python: {
-      fr: "Python - Flask",
-      en: "Python - Flask"
+    godot: {
+      fr: "Godot - GDScript",
+      en: "Godot - GDScript"
     },
     java: {
       fr: "Java - JavaFX",
