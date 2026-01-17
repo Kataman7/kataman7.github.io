@@ -35,6 +35,10 @@ export const translations = {
       fr: "eMail",
       en: "eMail"
     },
+    contact: {
+      fr: "Contact",
+      en: "Contact"
+    },
     skills: {
       fr: "Compétences",
       en: "Skills"
@@ -367,6 +371,17 @@ export const translations = {
         en: "A comprehensive web application developed in PHP and MySQL to streamline student academic tracking. This project enhanced my web development and database optimization skills while emphasizing the importance of user-focused design. The primary objective was to apply the Agile methodology, which included organizing tasks on Trello, conducting sprints, and collaborating with a client through sprint reviews."
       }
     },
+    projectReviews: {
+      title: {
+        fr: "Projet R5.A.05 - Plateforme de critiques de formations post-bac",
+        en: "R5.A.05 Project - Post-High-School Training Review Platform"
+      },
+      description: {
+        fr: "Projet client-serveur basé sur une API REST développée avec Symfony et API Platform et une interface en Vue.js permettant de consulter et publier des avis sur des formations post-bac. Ce travail m’a permis de renforcer mes compétences en conception d’API sécurisées, en architecture applicative et en développement d’interfaces réactives.",
+        en: "A client-server project based on a REST API built with Symfony and API Platform and a Vue.js interface for consulting and publishing reviews on post-high-school training programs. This work strengthened my skills in secure API design, application architecture, and reactive interface development."
+      }
+    },
+
     terrariaLike: {
       title: {
         fr: "Projet Personnel - Terraria-Like en C",
@@ -501,6 +516,10 @@ export const translations = {
     alternative: {
       fr: "Alternativement, n'hésitez pas à utiliser le formulaire de contact ci-dessous pour entrer en contact.",
       en: "Alternatively, feel free to use the contact form below to get in touch."
+    },
+    visit: {
+      fr: "Pour me contacter, rendez-vous sur la page Contact.",
+      en: "To get in touch, visit the Contact page."
     },
     form: {
       name: {
@@ -958,6 +977,56 @@ export const translations = {
         en: "Improved my understanding of scalable web application design, optimized database operations for large data sets, and gained hands-on experience with Agile workflows such as sprint planning, task prioritization, and iterative development."
       }
     },
+
+    projectReviews: {
+      title: {
+        fr: "Projet R5.A.05 - Plateforme de critiques de formations post-bac",
+        en: "R5.A.05 Project - Post-High-School Training Review Platform"
+      },
+      intro: {
+        fr: "Réalisé dans le cadre de la ressource R5.A.05, ce projet client-serveur vise à concevoir une plateforme de consultation et de publication d’avis sur des formations post-bac, reposant sur une API REST développée avec Symfony et API Platform et une interface front-end en Vue.js. Il m’a permis de renforcer mes compétences en architecture applicative, en sécurisation des échanges et en développement d’interfaces réactives, tout en appliquant une organisation Agile et collaborative.",
+        en: "Carried out as part of the R5.A.05 course, this client-server project aims to design a platform for consulting and publishing reviews on post-high-school training programs, based on a REST API developed with Symfony and API Platform and a Vue.js front-end interface. It strengthened my skills in application architecture, secure communications, and reactive interface development, while applying an Agile and collaborative workflow."
+      },
+      context: {
+        fr: "Le système permet de centraliser les informations sur les formations, de gérer les utilisateurs et leurs rôles, de contrôler la publication des contenus et de proposer une évaluation multi-critères afin d’aider les futurs étudiants dans leurs choix d’orientation.",
+        en: "The system centralizes information on training programs, manages users and roles, controls content publication, and provides multi-criteria evaluation to help future students in their orientation choices."
+      },
+      role: {
+        fr: "Participation à la modélisation du domaine, à l’implémentation des entités Doctrine, à la sécurisation des accès via JWT et voters, ainsi qu’au développement des fonctionnalités front-end en Vue.js et TypeScript, avec une implication active dans la gestion du projet et du dépôt Git.",
+        en: "Contributed to domain modeling, implementation of Doctrine entities, securing access using JWT and voters, and development of front-end features in Vue.js and TypeScript, with active involvement in project and Git management."
+      },
+      technologies: {
+        fr: "Symfony, API Platform, Doctrine ORM, MySQL, JWT, Vue.js et TypeScript.",
+        en: "Symfony, API Platform, Doctrine ORM, MySQL, JWT, Vue.js and TypeScript."
+      },
+      skills: {
+        fr: [
+          "Conception d’une API REST sécurisée dans un contexte applicatif réel (AC3).",
+          "Modélisation d’un schéma relationnel riche et cohérent (CE1.06).",
+          "Implémentation de règles métiers et de validations multi-critères (AC11).",
+          "Gestion de l’authentification et des autorisations par rôles et tokens (AC2).",
+          "Développement d’une interface réactive orientée expérience utilisateur (CE1.03).",
+          "Application de l’architecture client-serveur et séparation des responsabilités (AC1).",
+          "Organisation du travail collaboratif avec Git et méthodes Agiles (C21.04).",
+          "Vérification de la qualité applicative par des tests fonctionnels et API (AC3)."
+        ],
+        en: [
+          "Design of a secure REST API in a real application context (AC3).",
+          "Modeling a rich and consistent relational schema (CE1.06).",
+          "Implementation of business rules and multi-criteria validations (AC11).",
+          "Management of role-based authentication and authorization using tokens (AC2).",
+          "Development of a reactive user-oriented interface (CE1.03).",
+          "Application of client-server architecture and separation of concerns (AC1).",
+          "Organization of collaborative work using Git and Agile methods (C21.04).",
+          "Application quality assurance through functional and API testing (AC3)."
+        ]
+      },
+      takeaways: {
+        fr: "Ce projet m’a permis de consolider mes compétences en conception d’API sécurisées et en développement full-stack orienté services, tout en réalisant une application concrète au service de l’orientation post-bac.",
+        en: "This project consolidated my skills in secure API design and service-oriented full-stack development, while delivering a concrete application for post-high-school orientation."
+      }
+    },
+
 
     terrariaLike: {
       title: {

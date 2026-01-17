@@ -1,4 +1,24 @@
 export const projectsData = {
+  'project_reviews': {
+    id: 'project_reviews',
+    startDate: 'Dec 2025',
+    endDate: 'Jan 2026',
+    types: ['web'],
+    titleKey: 'projects.projectReviews.title',
+    descriptionKey: 'projects.projectReviews.description',
+    detailsKey: 'projectDetails.projectReviews',
+    mediaType: 'images',
+    mediaSrcs: [
+      '/resources/images/projectreviews_home.png',
+      '/resources/images/projectreviews_project.png',
+      '/resources/images/projectreviews_admin.png'
+    ],
+    mediaAlts: [
+      'My-Formation Home Page',
+      'My-Formation Project Page',
+      'My-Formation Reviews Page'
+    ]
+  },
   'skull-roulette': {
     id: 'skull-roulette',
     startDate: 'Nov 2025',

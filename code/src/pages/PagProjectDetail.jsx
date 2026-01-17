@@ -26,7 +26,6 @@ const MediaContainer = styled.div`
   
   img {
   width: 100%;
-  max-width: ${props => props.theme.sizes.mediaMaxWidth};
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -38,13 +37,11 @@ const MediaContainer = styled.div`
   
   video {
   width: 100%;
-  max-width: ${props => props.theme.sizes.mediaMaxWidth};
     height: auto;
   }
   
   iframe {
   width: 100%;
-  max-width: ${props => props.theme.sizes.mediaMaxWidth};
   height: ${props => props.theme.sizes.iframeHeight};
   }
 `;

@@ -77,8 +77,8 @@ const PagHome = () => {
               >
                 {t('links.cv')}
               </AtmButtonLink>
-              <AtmButtonLink href="mailto:contact@antonin.net">
-                {t('links.email')}
+              <AtmButtonLink to="/contact">
+                {t('links.contact')}
               </AtmButtonLink>
               <AtmButtonLink to="/skills">
                 {t('links.skills')}
@@ -197,25 +197,6 @@ const PagHome = () => {
         />
       </MolSection>
 
-      {/* Contact Section */}
-      <MolSection>
-        <MolTwoColumn
-          left={<AtmHeading level={3}>{t('contact.title')}</AtmHeading>}
-          right={
-            <>
-              <AtmText>
-                {t('contact.intro')} <strong>
-                  <AtmSimpleLink href="mailto:contact@antonin.net">
-                    contact@antonin.net
-                  </AtmSimpleLink>
-                </strong>
-              </AtmText>
-              <AtmText>{t('contact.alternative')}</AtmText>
-              <MolContactForm />
-            </>
-          }
-        />
-      </MolSection>
 
       {/* Quotes Section */}
       <MolSection>
