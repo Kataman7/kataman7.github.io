@@ -1,4 +1,16 @@
 export const projectsData = {
+  'codeGameJam2026': {
+    id: 'codeGameJam2026',
+    startDate: 'Jan 2026',
+    endDate: 'Jan 2026',
+    types: ['game'],
+    titleKey: 'projects.codeGameJam2026.title',
+    descriptionKey: 'projects.codeGameJam2026.description',
+    detailsKey: 'projectDetails.codeGameJam2026',
+    customLinks: [{ name: "Itch.io", url: "https://kataman.itch.io/after-party-the-declic" }],
+    mediaType: 'youtube',
+    mediaSrc: 'https://www.youtube.com/embed/kaC0NxIkN5A',
+  },
   'project_reviews': {
     id: 'project_reviews',
     startDate: 'Dec 2025',
@@ -7,6 +19,7 @@ export const projectsData = {
     titleKey: 'projects.projectReviews.title',
     descriptionKey: 'projects.projectReviews.description',
     detailsKey: 'projectDetails.projectReviews',
+    customLinks: [],
     mediaType: 'images',
     mediaSrcs: [
       '/resources/images/projectreviews_home.png',
@@ -26,6 +39,7 @@ export const projectsData = {
     titleKey: 'projects.skullRoulette.title',
     descriptionKey: 'projects.skullRoulette.description',
     detailsKey: 'projectDetails.skullRoulette',
+    customLinks: [],
     mediaType: 'image',
     mediaSrc: '/resources/images/skullroulette_ingame.gif',
     mediaAlt: 'Skull Roulette game in progress'
@@ -38,6 +52,7 @@ export const projectsData = {
     titleKey: 'projects.trelloAI.title',
     descriptionKey: 'projects.trelloAI.description',
     detailsKey: 'projectDetails.trelloAI',
+    customLinks: [{ name: "GitHub", url: "https://github.com/Kataman7/trello-card-generator-llm"}],
     mediaType: 'images',
     mediaSrcs: [
       '/resources/images/trelloIAchat.png',
@@ -56,6 +71,7 @@ export const projectsData = {
     titleKey: "projects.capybaraBot.title",
     descriptionKey: "projects.capybaraBot.description",
     detailsKey: "projectDetails.capybaraBot",
+    customLinks: [{ name: "GitHub", url: "https://github.com/Kataman7/capybara"}],
   },
   'my-avatar': {
     id: 'my-avatar',
@@ -65,6 +81,7 @@ export const projectsData = {
     titleKey: 'projects.myAvatar.title',
     descriptionKey: 'projects.myAvatar.description',
     detailsKey: 'projectDetails.myAvatar',
+    customLinks: [],
     mediaType: 'image',
     mediaSrc: '/resources/images/my-avatar.png',
     mediaAlt: 'My Avatar Main Interface'
@@ -77,6 +94,7 @@ export const projectsData = {
     titleKey: 'projects.veryBadSplit.title',
     descriptionKey: 'projects.veryBadSplit.description',
     detailsKey: 'projectDetails.veryBadSplit',
+    customLinks: [],
     mediaType: 'image',
     mediaSrc: '/resources/images/verybadsplit_interface.png',
     mediaAlt: 'Very Bad Split Main Interface'
@@ -89,6 +107,7 @@ export const projectsData = {
     titleKey: 'projects.skull.title',
     descriptionKey: 'projects.skull.description',
     detailsKey: 'projectDetails.skull',
+    customLinks: [],
     mediaType: 'image',
     mediaSrc: '/resources/images/skull_ingame.png',
     mediaAlt: 'Skull game in progress'
@@ -101,6 +120,7 @@ export const projectsData = {
     titleKey: 'projects.smileWeb.title',
     descriptionKey: 'projects.smileWeb.description',
     detailsKey: 'projectDetails.smileWeb',
+    customLinks: [{ name: "Demo", url: "https://viewer.orthup.com/?p=cHJvamVjdC04NDU3MA=="}],
     mediaType: 'images',
     mediaSrcs: [
       '/resources/images/smileweb_interface.png',
@@ -119,6 +139,9 @@ export const projectsData = {
     titleKey: 'projects.silentOrBoom.title',
     descriptionKey: 'projects.silentOrBoom.description',
     detailsKey: 'projectDetails.silentOrBoom',
+    customLinks: [
+      { name: "Itch.io", url: "https://kataman.itch.io/silence-or-boom" }
+    ],
     mediaType: 'youtube',
     mediaSrc: 'https://www.youtube.com/embed/j-DTZzu-aXo'
   },
@@ -130,6 +153,7 @@ export const projectsData = {
     titleKey: 'projects.sae3a.title',
     descriptionKey: 'projects.sae3a.description',
     detailsKey: 'projectDetails.sae3a',
+    customLinks: [],
     mediaType: 'image',
     mediaSrc: '/resources/images/capynote.png',
     mediaAlt: 'Class diagram'
@@ -142,6 +166,7 @@ export const projectsData = {
     titleKey: 'projects.terrariaLike.title',
     descriptionKey: 'projects.terrariaLike.description',
     detailsKey: 'projectDetails.terrariaLike',
+    customLinks: [],
     mediaType: 'video',
     mediaSrc: '/resources/video/TerrariaLike.mp4'
   },
@@ -153,6 +178,7 @@ export const projectsData = {
     titleKey: 'projects.saeTrain.title',
     descriptionKey: 'projects.saeTrain.description',
     detailsKey: 'projectDetails.saeTrain',
+    customLinks: [],
     mediaType: 'image',
     mediaSrc: '/resources/images/train.png',
     mediaAlt: 'Board Game Screenshot'
@@ -165,6 +191,7 @@ export const projectsData = {
     titleKey: 'projects.picodeon.title',
     descriptionKey: 'projects.picodeon.description',
     detailsKey: 'projectDetails.picodeon',
+    customLinks: [{ name: "PicoKeebs", url: "https://www.picokeebs.fr/picodeon.php" }],
     mediaType: 'images',
     mediaSrcs: [
       '/resources/images/pcb_schematic.png',
@@ -189,6 +216,7 @@ export const projectsData = {
     titleKey: 'projects.picokey.title',
     descriptionKey: 'projects.picokey.description',
     detailsKey: 'projectDetails.picokey',
+    customLinks: [],
     mediaType: 'image',
     mediaSrc: '/resources/images/picokey.png',
     mediaAlt: 'Picokey MIDI Controller'

@@ -143,10 +143,17 @@ const PagProjectDetail = () => {
         <MolTwoColumn
           left={<AtmHeading level={3}>{t('links.title')}</AtmHeading>}
           right={
-            <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem', alignItems: 'center' }}>
               <AtmButtonLink onClick={() => navigate('/', { state: { scrollTo: projectId } })}>
                 {t('projectDetails.backToPortfolio')}
               </AtmButtonLink>
+              {project.customLinks && project.customLinks.length > 0 &&
+                project.customLinks.map((link, index) => (
+                  <AtmButtonLink key={index} onClick={() => window.open(link.url, '_blank')}>
+                    {link.name}
+                  </AtmButtonLink>
+                ))
+              }
             </div>
           }
         />

@@ -361,6 +361,16 @@ export const translations = {
         en: "A fun and challenging 2D game developed during the Code Game Jam 2025 using Lua and Pico-8, with strict performance constraints and a limited color palette. The game features a character who uses TNT to collect resources and defeat waves of monsters, all coded from scratch in just 24 hours."
       }
     },
+    codeGameJam2026: {
+      title: {
+        fr: "After Party: The Declic – Jeu Narratif Interactif",
+        en: "After Party: The Declic – Narrative Interactive Game"
+      },
+      description: {
+        fr: "Un jeu narratif et interactif développé en 30 heures avec Godot Engine pour la Code Game Jam 2026 de l'IUT Montpellier-Sète. Le joueur doit nettoyer un appartement dévasté après une soirée, convaincre les derniers invités de partir et gérer une pression temporelle croissante avant l'arrivée imminente de son père. Le projet a été réalisé en équipe de 8 étudiants (programmeurs, artistes, modélisateurs 3D, musicien) et intègre des systèmes de dialogues interactifs avec branchements narratifs, une gestion d'état dynamique et des mécaniques de décision où chaque action impacte directement l'issue de la partie à travers des dialogues absurdes et des situations tendues.",
+        en: "A narrative and interactive game developed in 30 hours with Godot Engine for the 2026 Code Game Jam at IUT Montpellier-Sète. The player must clean up a devastated apartment after a party, convince the last guests to leave, and manage increasing time pressure before their father's imminent arrival. The project was completed by a team of 8 students (programmers, artists, 3D modelers, musician) and features interactive dialogue systems with narrative branching, dynamic state management, and decision mechanics where each action directly impacts the game's outcome through absurd dialogues and tense situations."
+      }
+    },
     sae3a: {
       title: {
         fr: "SAE 3A - Application Web de Suivi Académique Étudiant",
@@ -926,6 +936,51 @@ export const translations = {
       trailer: {
         fr: "Bande-annonce :",
         en: "Trailer:"
+      }
+    },
+
+    codeGameJam2026: {
+      title: {
+        fr: "After Party: The Declic – Jeu Narratif Interactif",
+        en: "After Party: The Declic – Narrative Interactive Game"
+      },
+      intro: {
+        fr: "Un jeu narratif et interactif développé en 30 heures avec Godot Engine pour la Code Game Jam 2026 de l'IUT Montpellier-Sète (thème : « C'était la fête du clic »). Le joueur doit nettoyer un appartement dévasté après une soirée, convaincre les derniers invités de partir et gérer une pression temporelle croissante avant l'arrivée imminente de son père. Chaque décision et action influe directement sur l'issue de la partie à travers des dialogues absurdes, des situations tendues et des mécaniques de gestion du temps.",
+        en: "A narrative and interactive game developed in 30 hours with Godot Engine for the 2026 Code Game Jam at IUT Montpellier-Sète (theme: 'It was the click party'). The player must clean up a devastated apartment after a party, convince the last guests to leave, and manage increasing time pressure before their father's imminent arrival. Each decision and action directly influences the outcome through absurd dialogues, tense situations, and time management mechanics."
+      },
+      context: {
+        fr: "Développé en 30 heures chrono dans le cadre d'une game jam universitaire, ce projet imposait des contraintes strictes de temps, de créativité et de collaboration interdisciplinaire. Le défi consistait à concevoir une architecture de jeu solide, intégrer des systèmes narratifs interactifs et coordonner une équipe de 8 personnes (programmeurs, artistes, modélisateurs 3D, musicien) pour produire une expérience de jeu complète et jouable.",
+        en: "Developed in 30 hours during a university game jam, this project imposed strict constraints on time, creativity, and interdisciplinary collaboration. The challenge was to design a solid game architecture, integrate interactive narrative systems, and coordinate a team of 8 people (programmers, artists, 3D modelers, musician) to produce a complete and playable game experience."
+      },
+      role: {
+        fr: "J'ai assuré la majeure partie de la programmation et conçu l'architecture technique du jeu. J'ai implémenté les systèmes de dialogues interactifs, la gestion de l'état du jeu (progression du nettoyage, départ des invités, minuteur), les mécaniques de décision avec conséquences narratives, et la coordination entre les différents systèmes. J'ai également facilité l'intégration des assets visuels et sonores produits par l'équipe artistique dans le moteur Godot.",
+        en: "I handled the majority of the programming and designed the game's technical architecture. I implemented the interactive dialogue systems, game state management (cleaning progress, guest departures, timer), decision mechanics with narrative consequences, and coordination between different systems. I also facilitated the integration of visual and audio assets produced by the artistic team into the Godot engine."
+      },
+      technologies: {
+        fr: "Godot Engine, GDScript, systèmes de dialogues narratifs, gestion d'état de jeu, intégration d'assets 3D et audio.",
+        en: "Godot Engine, GDScript, narrative dialogue systems, game state management, 3D and audio asset integration."
+      },
+      skills: {
+        fr: [
+          "Conçu et implémenté une architecture de jeu modulaire en 30 heures sous contrainte de temps extrême (AC3, AC4).",
+          "Développé des systèmes de dialogues interactifs avec branchements narratifs et gestion des conséquences (AC2, AC4).",
+          "Coordonné une équipe interdisciplinaire de 8 étudiants (programmeurs, artistes, modélisateurs, musicien) (AC5, CE1.06).",
+          "Implémenté des mécaniques de gameplay basées sur la gestion du temps et des décisions avec impacts directs (AC2).",
+          "Intégré efficacement des assets visuels et sonores dans le moteur Godot en respectant les délais serrés (AC4).",
+          "Appliqué des méthodologies agiles et de développement rapide adaptées au contexte de game jam (AC5, CE1.06)."
+        ],
+        en: [
+          "Designed and implemented a modular game architecture in 30 hours under extreme time constraints (AC3, AC4).",
+          "Developed interactive dialogue systems with narrative branching and consequence management (AC2, AC4).",
+          "Coordinated an interdisciplinary team of 8 students (programmers, artists, modelers, musician) (AC5, CE1.06).",
+          "Implemented gameplay mechanics based on time management and decisions with direct impacts (AC2).",
+          "Efficiently integrated visual and audio assets into the Godot engine while meeting tight deadlines (AC4).",
+          "Applied agile and rapid development methodologies adapted to the game jam context (AC5, CE1.06)."
+        ]
+      },
+      takeaways: {
+        fr: "Ce projet fut une expérience intense de développement sous pression extrême. Il a considérablement renforcé mes compétences en développement rapide, architecture logicielle adaptative, coordination d'équipe interdisciplinaire et gestion de projet avec contraintes de temps strictes. La game jam m'a également permis de découvrir le développement de jeux vidéo avec Godot et d'apprendre à prioriser les fonctionnalités essentielles pour livrer un produit complet et fonctionnel dans un délai très court.",
+        en: "This project was an intense experience of development under extreme pressure. It significantly strengthened my skills in rapid development, adaptive software architecture, interdisciplinary team coordination, and project management with strict time constraints. The game jam also allowed me to discover video game development with Godot and learn to prioritize essential features to deliver a complete and functional product within a very short timeframe."
       }
     },
 
