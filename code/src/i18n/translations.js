@@ -173,14 +173,14 @@ export const translations = {
     },
     picokeebs: {
       content: {
-        fr: "PicoKeebs est mon entreprise qui se spécialise dans la construction de claviers personnalisés, y compris des claviers MIDI pour musiciens. J'ai développé moi-même la boutique en ligne en utilisant PHP et je conçois chaque clavier du PCB au boîtier. Mon objectif est de fournir des produits uniques et de haute qualité qui combinent esthétique, performance et fonctionnalité pour les passionnés de technologie et de musique.",
-        en: "PicoKeebs is my company that specialises in building custom keyboards, including MIDI keyboards for musicians. I developed the online store myself using PHP and design each keyboard from the PCB to the case. My goal is to provide unique, high quality products that combine aesthetics, performance and functionality for tech and music enthusiasts."
+        fr: "PicoKeebs est mon entreprise spécialisée dans la conception de claviers personnalisés. Elle s'est progressivement concentrée autour d'un produit principal : le PicoDeon, un clavier MIDI conçu de A à Z, du PCB au boîtier. J'ai développé moi-même la boutique en ligne en PHP et je gère l'ensemble du processus : la conception, la production en partenariat avec une usine, ainsi que l'assemblage et la soudure des composants que l'usine ne peut pas réaliser. Le PicoDeon a trouvé des clients partout dans le monde, notamment des conservatoires de musique.",
+        en: "PicoKeebs is my company specialising in custom keyboard design. It gradually focused around a main product: the PicoDeon, a MIDI keyboard designed from scratch, from the PCB to the case. I developed the online store myself using PHP and manage the entire process: design, production in partnership with a factory, and the assembly and soldering of components the factory cannot handle. The PicoDeon has reached customers worldwide, including music conservatories."
       }
     },
     c4w: {
       stage: {
-        fr: "J'ai effectué un stage de 3 mois chez C4W du 13 janvier au 5 avril 2024. C4W est une entreprise de développement logiciel spécialisée dans les solutions CAO (Conception Assistée par Ordinateur) pour le domaine médical. Pendant mon stage, j'ai acquis une expérience pratique dans le développement de solutions logicielles personnalisées pour les applications médicales.",
-        en: "I did a 3-month internship at C4W from 13 January to 5 April 2024. C4W is a software development company specialising in CAD (Computer-Aided Design) solutions for the medical field. During my internship I gained hands-on experience in the development of customised software solutions for medical applications."
+        fr: "J'ai effectué un stage de 3 mois chez C4W du 13 janvier au 5 avril 2024. C4W est une entreprise de développement logiciel spécialisée dans les solutions CAO (Conception Assistée par Ordinateur) pour le domaine médical. Pendant mon stage, j'ai développé Smile Web, une application web de visualisation et d'édition de traitement orthodontique.",
+        en: "I did a 3-month internship at C4W from 13 January to 5 April 2024. C4W is a software development company specialising in CAD (Computer-Aided Design) solutions for the medical field. During my internship, I developed Smile Web, a web application for visualising and editing orthodontic treatment."
       },
       alternance: {
         fr: "Dans la continuité de mon stage, j'ai effectué une alternance chez C4W de septembre 2025 à août 2026 pendant toute ma troisième année de BUT. J'ai poursuivi l'amélioration de Smile Web tout en développant un backend en C++ avec des fonctions de plus bas niveau permettant de travailler directement sur les mesh. Cette approche a permis d'apporter de nouvelles fonctionnalités impossibles à implémenter uniquement en JavaScript.",
@@ -402,6 +402,16 @@ export const translations = {
         en: "An exciting solo project inspired by Terraria, where I built a game with procedural world generation using cellular automata. This journey deepened my understanding of optimization, memory management, and algorithmic design."
       }
     },
+    lookalike: {
+      title: {
+        fr: "LookaLike - Catalogue de Vêtements & Recherche par Similarité",
+        en: "LookaLike - Clothing Catalogue & Similarity Search"
+      },
+      description: {
+        fr: "Une application web et mobile construite avec React, FastAPI et PostgreSQL. LookaLike permet de parcourir un catalogue de vêtements toutes marques, de filtrer selon ses préférences et de trouver des articles similaires à partir d'une photo uploadée. L'objectif est d'en faire une vraie application publique.",
+        en: "A web and mobile application built with React, FastAPI and PostgreSQL. LookaLike lets users browse a multi-brand clothing catalogue, filter by preferences, and find similar items from an uploaded photo. The goal is to turn it into a fully public application."
+      }
+    },
     saeTrain: {
       title: {
         fr: "SAE Train - Jeu de Plateau et de Cartes",
@@ -410,6 +420,16 @@ export const translations = {
       description: {
         fr: "Un projet de groupe dynamique dans lequel j'ai développé un jeu de plateau et de cartes en Java, intégrant la conception orientée objet et une interface conviviale. Ce projet a réuni créativité et expertise technique pour créer une expérience de jeu captivante.",
         en: "A dynamic group project in which I developed a board and card game in Java, integrating object-oriented design and a user-friendly interface. This project brought together creativity and technical expertise to create a compelling gaming experience."
+      }
+    },
+    mineShare: {
+      title: {
+        fr: "MineShare - Gestionnaire de Serveur Minecraft P2P",
+        en: "MineShare - P2P Minecraft Server Manager"
+      },
+      description: {
+        fr: "Une application web innovante permettant à un groupe d'amis de partager un serveur Minecraft sans hébergement payant permanent. Développé avec Node.js, Docker, et Backblaze B2, le système intègre un verrou distribué anti-conflits, une synchronisation cloud automatique, et un tunnel Playit.gg pour l'accès public sans configuration réseau.",
+        en: "An innovative web application enabling a group of friends to share a Minecraft server without permanent paid hosting. Built with Node.js, Docker, and Backblaze B2, the system features a distributed conflict-prevention lock, automatic cloud synchronization, and a Playit.gg tunnel for public access without network configuration."
       }
     },
     capybaraBot: {
@@ -1225,6 +1245,104 @@ export const translations = {
       takeaways: {
         fr: "Maîtrisé l'intégration de LLM dans des systèmes de jeu interactifs où l'IA devient un acteur central du gameplay. Développé une expertise en prompt engineering pour créer des expériences narratives émergentes cohérentes, tout en renforçant mes compétences en architecture backend, DevOps et game design itératif.",
         en: "Mastered LLM integration in interactive game systems where AI becomes a central gameplay actor. Developed expertise in prompt engineering to create coherent emergent narrative experiences, while strengthening backend architecture, DevOps, and iterative game design skills."
+      }
+    },
+    mineShare: {
+      title: {
+        fr: "MineShare - Gestionnaire de Serveur Minecraft P2P",
+        en: "MineShare - P2P Minecraft Server Manager"
+      },
+      intro: {
+        fr: "Une application web innovante permettant à un groupe d'amis de partager un serveur Minecraft sans hébergement payant permanent. Le serveur peut être lancé par n'importe quel membre du groupe à la demande, avec synchronisation automatique du monde via le cloud.",
+        en: "An innovative web application enabling a group of friends to share a Minecraft server without permanent paid hosting. The server can be launched by any group member on demand, with automatic world synchronization via the cloud."
+      },
+      context: {
+        fr: "L'objectif était de résoudre un problème courant : comment jouer à Minecraft entre amis sans dépendre d'un ordinateur allumé 24/7 ni payer un hébergement mensuel. La solution devait gérer la synchronisation du monde, éviter les conflits d'accès concurrent, et fournir une connexion publique sans configuration réseau.",
+        en: "The goal was to solve a common problem: how to play Minecraft with friends without relying on a 24/7 computer or paying for monthly hosting. The solution needed to handle world synchronization, prevent concurrent access conflicts, and provide public connectivity without network configuration."
+      },
+      role: {
+        fr: "Conçu et développé l'intégralité du système : architecture distribuée avec verrou anti-conflits, interface web rétro style Minecraft, orchestration Docker multi-conteneurs, intégration Backblaze B2 pour le stockage cloud, et tunnel Playit.gg pour l'accès public.",
+        en: "Designed and developed the entire system: distributed architecture with conflict-prevention locking, retro Minecraft-style web interface, multi-container Docker orchestration, Backblaze B2 integration for cloud storage, and Playit.gg tunnel for public access."
+      },
+      technologies: {
+        fr: "Node.js, Express, Docker & Docker Compose, Backblaze B2 API, Playit.gg, HTML/CSS/JS vanilla, système de verrou distribué avec gestion des signaux.",
+        en: "Node.js, Express, Docker & Docker Compose, Backblaze B2 API, Playit.gg, vanilla HTML/CSS/JS, distributed locking system with signal handling."
+      },
+      skills: {
+        fr: [
+          "Conçu une architecture distribuée robuste avec système de verrou pour prévenir les conflits d'accès concurrent.",
+          "Implémenté la synchronisation bidirectionnelle de fichiers volumineux (compression, upload/download optimisés).",
+          "Orchestré plusieurs conteneurs Docker (application web, serveur Minecraft, tunnel réseau) avec Docker Compose.",
+          "Développé une API REST complète avec gestion d'états asynchrones et rafraîchissement temps réel.",
+          "Intégré l'API Backblaze B2 pour le stockage cloud avec gestion d'erreurs et retry automatique.",
+          "Créé une interface web responsive avec design rétro inspiré de Minecraft (pixel art, animations CSS).",
+          "Mis en place un système de gestion de signaux (SIGTERM, SIGINT) pour nettoyer les ressources en cas d'arrêt brutal.",
+          "Documenté exhaustivement le projet (installation, configuration, dépannage, API) pour faciliter l'adoption.",
+          "Optimisé les performances avec compression des mondes Minecraft avant transfert cloud.",
+          "Géré la complexité de configurations Minecraft multiples (VANILLA, PAPER, FORGE, FABRIC, etc.)."
+        ],
+        en: [
+          "Designed a robust distributed architecture with locking system to prevent concurrent access conflicts.",
+          "Implemented bidirectional synchronization of large files (optimized compression, upload/download).",
+          "Orchestrated multiple Docker containers (web app, Minecraft server, network tunnel) with Docker Compose.",
+          "Developed a complete REST API with asynchronous state management and real-time refresh.",
+          "Integrated Backblaze B2 API for cloud storage with error handling and automatic retry.",
+          "Created a responsive web interface with retro Minecraft-inspired design (pixel art, CSS animations).",
+          "Implemented signal handling (SIGTERM, SIGINT) to clean up resources on abrupt shutdown.",
+          "Extensively documented the project (installation, configuration, troubleshooting, API) to facilitate adoption.",
+          "Optimized performance with Minecraft world compression before cloud transfer.",
+          "Managed complexity of multiple Minecraft configurations (VANILLA, PAPER, FORGE, FABRIC, etc.)."
+        ]
+      },
+      takeaways: {
+        fr: "Acquis une expertise approfondie en architecture cloud distribuée, orchestration Docker et gestion de systèmes concurrents. Démontré la capacité à concevoir des solutions techniques élégantes pour des problèmes réels tout en maintenant une expérience utilisateur simple et intuitive.",
+        en: "Gained deep expertise in distributed cloud architecture, Docker orchestration, and concurrent system management. Demonstrated ability to design elegant technical solutions for real-world problems while maintaining a simple and intuitive user experience."
+      }
+    },
+    lookalike: {
+      title: {
+        fr: "LookaLike - Catalogue de Vêtements & Recherche par Similarité",
+        en: "LookaLike - Clothing Catalogue & Similarity Search"
+      },
+      intro: {
+        fr: "LookaLike est un projet en équipe de 3 personnes dont je suis le seul développeur. L'objectif est de créer une vraie application publique permettant de trouver facilement des vêtements correspondant à ses goûts, via des filtres avancés ou en uploadant directement une photo d'un vêtement pour trouver les articles similaires.",
+        en: "LookaLike is a 3-person project in which I am the sole developer. The goal is to create a real public application that makes it easy to find clothing matching your tastes, through advanced filters or by uploading a photo of a garment to find similar items."
+      },
+      context: {
+        fr: "Le projet consiste en un catalogue de vêtements de toutes marques et de tous types, actuellement centré sur les pulls, avec une vocation à s'étendre à l'ensemble des catégories vestimentaires. Chaque vêtement est décrit par de nombreuses caractéristiques, et l'application permet de filtrer, de rechercher par similarité et de découvrir des articles proches d'un vêtement donné.",
+        en: "The project consists of a clothing catalogue covering all brands and types, currently focused on jumpers, with the aim of expanding to all clothing categories. Each item is described by numerous characteristics, and the application allows filtering, similarity search, and discovering items close to a given garment."
+      },
+      role: {
+        fr: "En tant que seul développeur du projet, j'ai conçu et développé l'intégralité de l'architecture technique : le frontend en React, le backend en Python avec FastAPI, la base de données PostgreSQL, ainsi que l'application mobile Android Studio qui encapsule le site web. Mes coéquipiers se chargent du remplissage de la base de données et de la communication autour du projet.",
+        en: "As the sole developer on the project, I designed and built the entire technical architecture: the React frontend, the Python/FastAPI backend, the PostgreSQL database, and the Android Studio mobile app which wraps the website. My teammates handle database population and project communication."
+      },
+      technologies: {
+        fr: "React, Python, FastAPI, PostgreSQL, Android Studio.",
+        en: "React, Python, FastAPI, PostgreSQL, Android Studio."
+      },
+      skills: {
+        fr: [
+          "Conçu une architecture fullstack complète en autonomie, du backend à l'interface utilisateur (AC11).",
+          "Mis en place une API REST avec FastAPI pour exposer les données et les fonctionnalités de recherche (CE1.03).",
+          "Implémenté un système de recherche par similarité permettant de retrouver des articles proches à partir de filtres ou d'une photo uploadée (AC1).",
+          "Géré une base de données relationnelle PostgreSQL avec un modèle de données riche et extensible (CE1.06).",
+          "Développé une application mobile Android Studio encapsulant le site web pour une expérience multiplateforme (CE1.06).",
+          "Travaillé en équipe en coordonnant les besoins techniques avec les contributions non-développeurs (AC2).",
+          "Adopté les bonnes pratiques de développement web moderne pour garantir la qualité et la maintenabilité du code (C21.04)."
+        ],
+        en: [
+          "Designed a complete fullstack architecture independently, from backend to user interface (AC11).",
+          "Set up a REST API with FastAPI to expose data and search features (CE1.03).",
+          "Implemented a similarity search system to find related items based on filters or an uploaded photo (AC1).",
+          "Managed a PostgreSQL relational database with a rich and extensible data model (CE1.06).",
+          "Developed an Android Studio mobile app wrapping the website for a cross-platform experience (CE1.06).",
+          "Worked as part of a team by coordinating technical needs with non-developer contributions (AC2).",
+          "Adopted modern web development best practices to ensure code quality and maintainability (C21.04)."
+        ]
+      },
+      takeaways: {
+        fr: "Acquis une expérience complète de développement fullstack en portant seul toute la stack technique d'un projet destiné à être publié, tout en apprenant à collaborer avec des membres non-techniques dans une équipe projet.",
+        en: "Gained comprehensive fullstack development experience by independently carrying the entire technical stack of a project intended for public release, while learning to collaborate with non-technical team members."
       }
     },
 

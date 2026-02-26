@@ -44,7 +44,7 @@ const PagHome = () => {
     { nameKey: 'languages.godot', progress: 70 },
     { nameKey: 'languages.java', progress: 96 },
     { nameKey: 'languages.docker', progress: 80 },
-    { nameKey: 'languages.sql', progress: 80 },
+    { nameKey: 'languages.sql', progress: 85 },
     { nameKey: 'languages.javascript', progress: 90 },
     { nameKey: 'languages.php', progress: 80 },
     { nameKey: 'languages.lua', progress: 70 }

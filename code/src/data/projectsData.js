@@ -1,4 +1,23 @@
 export const projectsData = {
+  'mineShare': {
+    id: 'mineShare',
+    startDate: 'Feb 2026',
+    endDate: 'Feb 2026',
+    types: ['web'],
+    titleKey: 'projects.mineShare.title',
+    descriptionKey: 'projects.mineShare.description',
+    detailsKey: 'projectDetails.mineShare',
+    customLinks: [{ name: "GitHub", url: "https://github.com/Kataman7/mineShare" }],
+    mediaType: 'images',
+    mediaSrcs: [
+      '/resources/images/mineshare_interface.png',
+      '/resources/images/mineshare_diagramme.png',
+    ],
+    mediaAlts: [
+      'MineShare Main Interface',
+      'Communication architecture',
+    ]
+  },
   'codeGameJam2026': {
     id: 'codeGameJam2026',
     startDate: 'Jan 2026',
@@ -10,6 +29,25 @@ export const projectsData = {
     customLinks: [{ name: "Itch.io", url: "https://kataman.itch.io/after-party-the-declic" }],
     mediaType: 'youtube',
     mediaSrc: 'https://www.youtube.com/embed/kaC0NxIkN5A',
+  },
+  'lookalike': {
+    id: 'lookalike',
+    startDate: 'Jan 2026',
+    endDate: null,
+    types: ['web','ai'],
+    titleKey: 'projects.lookalike.title',
+    descriptionKey: 'projects.lookalike.description',
+    detailsKey: 'projectDetails.lookalike',
+    customLinks: [{ name: "Demo", url: "http://88.166.205.108:50007/" }],
+      mediaType: 'images',
+      mediaSrcs: [
+        '/resources/images/lookalike_home.png',
+        '/resources/images/lookalike_diagramme.png',
+      ],
+      mediaAlts: [
+        'LookaLike Home Page',
+        'Communication architecture',
+      ]
   },
   'project_reviews': {
     id: 'project_reviews',
